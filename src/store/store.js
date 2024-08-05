@@ -1,6 +1,6 @@
 import {create} from 'zustand'
 import {persist} from 'zustand/middleware'
-import {json} from '../../allproduct.json'
+
 
 
 let store = (set) => ({
