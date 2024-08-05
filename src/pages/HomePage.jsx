@@ -37,7 +37,7 @@ function HomePage() {
         </div>
         <div className="pt-[20px] md:pt-[0px] min-w-[50%] m-auto">
           <img
-            src="src/assets/images/logo.png"
+            src='@/assets/images/logo.png'
             alt=""
             className="h-40 md:h-60 mx-auto rounded-full hover:scale-110 transform transition duration-2"
           />
