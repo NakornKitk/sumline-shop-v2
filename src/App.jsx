@@ -9,15 +9,15 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/sumline-shop/",
       element: <HomePage />
     },
     {
-      path: "/detail/:id",
+      path: "/sumline-shop/detail/:id",
       element: <DetailPage />
     },
     {
-      path: "/cart",
+      path: "/sumline-shop/cart",
       element: <CartPage />
     }
   ]);

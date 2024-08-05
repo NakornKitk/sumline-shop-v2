@@ -29,7 +29,7 @@ function ProductCard({image, name, id, price, category, color}) {
 
   return (
     <div className="w-full max-w-[300px] bg-zinc-100 border border-gray-200 rounded-lg shadow mx-[auto]">
-      <Link to={`/detail/${id}`}>
+      <Link to={`/sumline-shop/detail/${id}`}>
         <img className="hover:scale-105 transform transition duration-2 h-[300px] w-[300px]" src={image[0]} alt="" />
       </Link>
         <div className="px-5 py-5">

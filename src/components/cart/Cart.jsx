@@ -14,7 +14,7 @@ function Cart() {
           <img src={iconCart} alt="" className="w-10" />
         </div>
           <Link
-            to={"/"}
+            to={"/sumline-shop/"}
             className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
           >
             Go to Home page

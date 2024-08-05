@@ -35,7 +35,6 @@ function ProductList() {
         })
         .filter((item) => {
           if (categoryTerm == "all") {
-            // console.log("--->"+categoryTerm)
             return item;
           } else if (item.category == categoryTerm) {
             return item;

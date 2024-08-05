@@ -52,7 +52,7 @@ function ProductDetail({
     <div className="w-100% bg-white">
       <div className="flex justify-between py-[20px] px-[20px] bg-[url('@/assets/images/bg.jpg')] bg-cover bg-fixed">
         <Link
-          to={"/"}
+          to={"/sumline-shop/"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
         >
           Back
@@ -61,7 +61,7 @@ function ProductDetail({
           Product Detail
         </h5>
         <Link
-          to={"/cart"}
+          to={"/sumline-shop/cart"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
         >
           Go to my cart
