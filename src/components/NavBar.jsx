@@ -17,6 +17,7 @@ function NavBar() {
     0
   );
 
+  
   return (
     <nav className="bg-[#7C9097]">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
