@@ -1,11 +1,12 @@
 import {create} from 'zustand'
 import {persist} from 'zustand/middleware'
+import {json} from '../../allproduct.json'
 
 
 let store = (set) => ({
         data: [],
         fetchData: async () => {
-            const response = await fetch('../../allproduct.json')
+            const response = await fetch('/sumline-shop/allproduct.json')
             const data = await response.json()
             set({ data: data });
         },

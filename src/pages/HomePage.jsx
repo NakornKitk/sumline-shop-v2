@@ -5,6 +5,7 @@ import SearchBar from "@/components/home/SearchBar";
 import iconShopee from "@/assets/images/shopee-icon.png";
 import iconLine from '@/assets/images/LINE_Brand_icon.png'
 import iconInstagram from '@/assets/images/ig-instagram-icon.png'
+import Logo from "@/assets/images/logo.png";
 
 function HomePage() {
   return (
@@ -37,7 +38,7 @@ function HomePage() {
         </div>
         <div className="pt-[20px] md:pt-[0px] min-w-[50%] m-auto">
           <img
-            src='@/assets/images/logo.png'
+            src={Logo}
             alt=""
             className="h-40 md:h-60 mx-auto rounded-full hover:scale-110 transform transition duration-2"
           />
