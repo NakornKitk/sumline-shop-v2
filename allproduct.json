@@ -1,0 +1,284 @@
+[{
+    "id":1,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_black.png","/src/assets/images/freebag.jpg"],
+    "color": "black"
+  },{
+    "id":2,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_darkgray1.1.png","/src/assets/images/Giant_yarn_bag_darkgray.png","/src/assets/images/freebag.jpg"],
+    "color": "dark gray"
+  },{
+    "id":3,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_gray.png","/src/assets/images/freebag.jpg"],
+    "color": "gray"
+  },{
+    "id":4,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_white1.1.png","/src/assets/images/Giant_yarn_bag_white.png","/src/assets/images/freebag.jpg"],
+    "color": "white"
+  },{
+    "id":5,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_beige.png","/src/assets/images/freebag.jpg"],
+    "color": "beige"
+  },{
+    "id":6,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_pink.png","/src/assets/images/freebag.jpg"],
+    "color": "pink"
+  },{
+    "id":7,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_darkpink1.1.png","/src/assets/images/Giant_yarn_bag_darkpink.png","/src/assets/images/freebag.jpg"],
+    "color": "dark pink"
+  },{
+    "id":8,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_blue1.1.png","/src/assets/images/Giant_yarn_bag_blue.png","/src/assets/images/freebag.jpg"],
+    "color": "blue"
+  },{
+    "id":9,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_lightblue.png","/src/assets/images/freebag.jpg"],
+    "color": "light blue"
+  },{
+    "id":10,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_lightgreen1.png","/src/assets/images/Giant_yarn_bag_lightgreen.png","/src/assets/images/freebag.jpg"],
+    "color": "light green"
+  },{
+    "id":11,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["/src/assets/images/Giant_yarn_bag_green.png","/src/assets/images/freebag.jpg"],
+    "color": "green"
+  },{
+    "id":12,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_black2.png","/src/assets/images/Giant_yarn_bag_black.png","/src/assets/images/freebag.jpg"],
+    "color": "black"
+  },{
+    "id":13,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_darkgray.png","/src/assets/images/freebag.jpg"],
+    "color": "dark gray"
+  },{
+    "id":14,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_gray2.png","/src/assets/images/Giant_yarn_bag_gray.png","/src/assets/images/freebag.jpg"],
+    "color": "gray"
+  },{
+    "id":15,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_white.png","/src/assets/images/freebag.jpg"],
+    "color": "white"
+  },{
+    "id":16,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_beige2.png","/src/assets/images/Giant_yarn_bag_beige.png","/src/assets/images/freebag.jpg"],
+    "color": "beige"
+  },{
+    "id":17,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_pink2.png","/src/assets/images/Giant_yarn_bag_pink.png","/src/assets/images/freebag.jpg"],
+    "color": "pink"
+  },{
+    "id":18,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_darkpink.png","/src/assets/images/freebag.jpg"],
+    "color": "dark pink"
+  },{
+    "id":19,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_blue.png","/src/assets/images/freebag.jpg"],
+    "color": "blue"
+  },{
+    "id":20,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_lightblue2.png","/src/assets/images/Giant_yarn_bag_lightblue.png","/src/assets/images/freebag.jpg"],
+    "color": "light blue"
+  },{
+    "id":21,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_lightgreen.png","/src/assets/images/freebag.jpg"],
+    "color": "light green"
+  },{
+    "id":22,
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
+    "image": ["/src/assets/images/Giant_yarn_bag_green.png","/src/assets/images/freebag.jpg"],
+    "color": "green"
+  },{
+    "id":23,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Giant_yarn_bag_black.png","/src/assets/images/freebag.jpg"],
+    "color": "black"
+  },{
+    "id":24,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Giant_yarn_bag_white.png","/src/assets/images/freebag.jpg"],
+    "color": "white"
+  },{
+    "id":25,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Mini_yarn_bag_green.jpg","/src/assets/images/freebag.jpg"],
+    "color": "green"
+  },{
+    "id":26,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Mini_yarn_bag_pink.png","/src/assets/images/Giant_yarn_bag_pink.png","/src/assets/images/freebag.jpg"],
+    "color": "pink"
+  },{
+    "id":27,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Giant_yarn_bag_beige.png","/src/assets/images/freebag.jpg"],
+    "color": "beige"
+  },{
+    "id":28,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_black.png","/src/assets/images/comingsoon.jpg"],
+    "color": "black"
+  },{
+    "id":29,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_white.png","/src/assets/images/comingsoon.jpg"],
+    "color": "white"
+  },{
+    "id":30,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_beige.png","/src/assets/images/comingsoon.jpg"],
+    "color": "beige"
+  },{
+    "id":31,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_pink.png","/src/assets/images/comingsoon.jpg"],
+    "color": "pink"
+  },{
+    "id":32,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_lightblue.png","/src/assets/images/comingsoon.jpg"],
+    "color": "light blue"
+  },{
+    "id":33,
+    "name": "Giant Yarn",
+    "price": 310,
+    "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
+    "category": "Giant Yarn",
+    "image": ["/src/assets/images/yarn_lightgreen.png","/src/assets/images/comingsoon.jpg"],
+    "color": "light green"
+  },{
+    "id":34,
+    "name": "Giant Yarn Bag (รุ่นสายคู่เเละสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่เเละสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น (สีรอ pre-order ประมาณ 5 วัน)",
+    "category": "Giant Yarn Bag",
+    "image": ["/src/assets/images/Giant_yarn_bag_other.jpg","/src/assets/images/comingsoon.jpg"],
+    "color": "pre order"
+  },{
+    "id":35,
+    "name": "Mini Giant Yarn Bag",
+    "price": 490,
+    "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody) (สีรอ pre-order ประมาณ 5 วัน)",
+    "category": "Mini Giant Yarn Bag",
+    "image": ["/src/assets/images/Mini_yarn_bag_other.jpg","/src/assets/images/comingsoon.jpg"],
+    "color": "pre order"
+  }
+  ]
+
+
