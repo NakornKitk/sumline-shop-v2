@@ -12,7 +12,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_darkgray1.1.png","/sumline-shop/src/assets/images/Giant_yarn_bag_darkgray.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkgray1.1.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkgray.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "dark gray"
   },{
     "id":3,
@@ -20,7 +20,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_gray.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_gray.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "gray"
   },{
     "id":4,
@@ -28,7 +28,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_white1.1.png","/sumline-shop/src/assets/images/Giant_yarn_bag_white.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_white1.1.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "white"
   },{
     "id":5,
@@ -36,7 +36,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_beige.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "beige"
   },{
     "id":6,
@@ -44,7 +44,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_pink.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "pink"
   },{
     "id":7,
@@ -52,7 +52,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_darkpink1.1.png","/sumline-shop/src/assets/images/Giant_yarn_bag_darkpink.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkpink1.1.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkpink.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "dark pink"
   },{
     "id":8,
@@ -60,7 +60,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_blue1.1.png","/sumline-shop/src/assets/images/Giant_yarn_bag_blue.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_blue1.1.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_blue.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "blue"
   },{
     "id":9,
@@ -68,7 +68,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_lightblue.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightblue.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "light blue"
   },{
     "id":10,
@@ -76,7 +76,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_lightgreen1.png","/sumline-shop/src/assets/images/Giant_yarn_bag_lightgreen.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightgreen1.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightgreen.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "light green"
   },{
     "id":11,
@@ -84,7 +84,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_green.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_green.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "green"
   },{
     "id":12,
@@ -92,7 +92,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_black2.png","/sumline-shop/src/assets/images/Giant_yarn_bag_black.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_black2.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_black.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "black"
   },{
     "id":13,
@@ -100,7 +100,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_darkgray.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkgray.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "dark gray"
   },{
     "id":14,
@@ -108,7 +108,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_gray2.png","/sumline-shop/src/assets/images/Giant_yarn_bag_gray.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_gray2.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_gray.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "gray"
   },{
     "id":15,
@@ -116,7 +116,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_white.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "white"
   },{
     "id":16,
@@ -124,7 +124,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_beige2.png","/sumline-shop/src/assets/images/Giant_yarn_bag_beige.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_beige2.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "beige"
   },{
     "id":17,
@@ -132,7 +132,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_pink2.png","/sumline-shop/src/assets/images/Giant_yarn_bag_pink.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_pink2.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "pink"
   },{
     "id":18,
@@ -140,7 +140,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_darkpink.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_darkpink.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "dark pink"
   },{
     "id":19,
@@ -148,7 +148,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_blue.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_blue.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "blue"
   },{
     "id":20,
@@ -156,7 +156,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_lightblue2.png","/sumline-shop/src/assets/images/Giant_yarn_bag_lightblue.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightblue2.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightblue.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "light blue"
   },{
     "id":21,
@@ -164,7 +164,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_lightgreen.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_lightgreen.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "light green"
   },{
     "id":22,
@@ -172,7 +172,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่ ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_green.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_green.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "green"
   },{
     "id":23,
@@ -180,7 +180,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_black.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_black.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "black"
   },{
     "id":24,
@@ -188,7 +188,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_white.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "white"
   },{
     "id":25,
@@ -196,7 +196,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Mini_yarn_bag_green.jpg","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Mini_yarn_bag_green.jpg","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "green"
   },{
     "id":26,
@@ -204,7 +204,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Mini_yarn_bag_pink.png","/sumline-shop/src/assets/images/Giant_yarn_bag_pink.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Mini_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "pink"
   },{
     "id":27,
@@ -212,7 +212,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_beige.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop/images/freebag.jpg"],
     "color": "beige"
   },{
     "id":28,
@@ -220,7 +220,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_black.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_black.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "black"
   },{
     "id":29,
@@ -228,7 +228,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_white.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_white.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "white"
   },{
     "id":30,
@@ -236,7 +236,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_beige.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_beige.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "beige"
   },{
     "id":31,
@@ -244,7 +244,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_pink.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_pink.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "pink"
   },{
     "id":32,
@@ -252,7 +252,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_lightblue.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_lightblue.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "light blue"
   },{
     "id":33,
@@ -260,7 +260,7 @@
     "price": 310,
     "description": "ไหมพรมกำมะหยี่ยักษ์ 500g ขนาดเส้นไหม 3cm พร้อมส่งในไทย",
     "category": "Giant Yarn",
-    "image": ["/sumline-shop/src/assets/images/yarn_lightgreen.png","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/yarn_lightgreen.png","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "light green"
   },{
     "id":34,
@@ -268,7 +268,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่เเละสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น (สีรอ pre-order ประมาณ 5 วัน)",
     "category": "Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_other.jpg","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Giant_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "pre order"
   },{
     "id":35,
@@ -276,7 +276,7 @@
     "price": 490,
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody) (สีรอ pre-order ประมาณ 5 วัน)",
     "category": "Mini Giant Yarn Bag",
-    "image": ["/sumline-shop/src/assets/images/Mini_yarn_bag_other.jpg","/sumline-shop/src/assets/images/comingsoon.jpg"],
+    "image": ["https://nakornkitk.github.io/sumline-shop/images/Mini_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop/images/comingsoon.jpg"],
     "color": "pre order"
   }
 ]
