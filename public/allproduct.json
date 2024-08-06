@@ -4,7 +4,7 @@
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น",
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
-    "image": ["/sumline-shop/src/assets/images/Giant_yarn_bag_black.png","/sumline-shop/src/assets/images/freebag.jpg"],
+    "image": ["src/assets/images/Giant_yarn_bag_black.png","/src/assets/images/freebag.jpg"],
     "color": "black"
   },{
     "id":2,
