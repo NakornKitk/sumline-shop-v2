@@ -7,7 +7,6 @@ import useStore from "@/store/store";
 
 function DetailPage() {
   const { id } = useParams();
-
   const { data } = useStore();
 
   return (
