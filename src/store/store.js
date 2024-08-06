@@ -7,7 +7,7 @@ import {persist} from 'zustand/middleware'
 let store = (set) => ({
         data: [],
         fetchData: async () => {
-            const response = await fetch('./src/allproduct.json')
+            const response = await fetch('src/allproduct.json')
             const data = await response.json()
             set({ data: data });
         },
@@ -32,7 +32,7 @@ let store = (set) => ({
 
 
 
-// store = persist(store, {name: "sumlineshopCart"})
+store = persist(store, {name: "sumlineshopCart"})
 let useStore = create(store)
 
 export default useStore;
