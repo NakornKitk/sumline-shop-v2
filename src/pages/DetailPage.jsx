@@ -8,11 +8,7 @@ import useStore from "@/store/store";
 function DetailPage() {
   const { id } = useParams();
 
-  const { data, fetchData} = useStore();
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const { data } = useStore();
 
   return (
     <div className="flex flex-col min-h-screen">

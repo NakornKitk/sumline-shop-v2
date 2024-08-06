@@ -23,7 +23,6 @@ function ProductCard({image, name, id, price, category, color}) {
       addCartItem({id:id,name:name,price:price,color:color,quantity:firstQuantity+1})
     }
     setQuantity(quantity => quantity+1)
-    console.log(quantity)
   }
 
 

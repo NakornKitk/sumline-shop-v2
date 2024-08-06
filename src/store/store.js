@@ -1,14 +1,11 @@
 import {create} from 'zustand'
 import {persist} from 'zustand/middleware'
-import {json} from '@/allproduct.json';
-
-
 
 
 let store = (set) => ({
         data: [],
         fetchData: async () => {
-            const response = await fetch(json)
+            const response = await fetch('src/allproduct.json')
             const data = await response.json()
             set({ data: data });
         },
