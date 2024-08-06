@@ -5,7 +5,7 @@ import {persist} from 'zustand/middleware'
 let store = (set) => ({
         data: [],
         fetchData: async () => {
-            const response = await fetch('./allproduct.json')
+            const response = await fetch('allproduct.json')
             const data = await response.json()
             set({ data: data });
         },
