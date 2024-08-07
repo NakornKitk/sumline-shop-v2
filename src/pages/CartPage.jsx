@@ -5,7 +5,7 @@ import Cart from '@/components/cart/Cart'
 
 function CartPage() {
   return (
-    <div className="flex flex-col justify-between bg-[url('@/assets/images/bg.jpg')] bg-cover bg-fixed min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       <NavBar />
       <Cart/>
       <Footer/>

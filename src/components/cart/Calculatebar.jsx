@@ -22,7 +22,7 @@ function Calculatebar() {
   const totalQuantity = allQuantity.reduce((partialSum, a) => partialSum + a, 0);
 
   return (
-    <div className="bg-white bg-opacity-85 rounded-2xl min-w-[30%] min-h-[240px] max-h-[280px] p-[10px] mt-[10px] md:mt-[0px]">
+    <div className="bg-zinc-200 bg-opacity-85 rounded-2xl min-w-[29%] min-h-[240px] max-h-[280px] p-[10px] mt-[10px] md:mt-[0px] ">
       <h5 className="text-4xl text-black mb-[10px]"> Order Summary</h5>
       <div className="flex justify-between">
         <h5 className="text-xl text-black"> Total Price:</h5>

@@ -5,7 +5,7 @@ function CartItem() {
   const { cartItems } = useStore();
 
   return (
-    <div className=" bg-white bg-opacity-90 rounded-2xl px-[10px] min-w-[70%]">
+    <div className=" bg-zinc-200 bg-opacity-90 rounded-2xl px-[10px] min-w-[70%]">
       <div className="flow-root">
         <ul
             role="list"

@@ -10,9 +10,9 @@ import icon from "@/assets/images/thread-ball-icon.svg";
 
 function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen justify-between">
+    <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="md:h-80 py-[20px] flex mb-[0px] bg-[url('@/assets/images/bg.jpg')] bg-cover bg-fixed mt-[80px]">
+      <div className="md:h-80 py-[20px] flex bg-[url('@/assets/images/bg.jpg')] bg-fixed mt-[80px]">
         <div className="w-[50%] pl-[7%] m-auto">
           <p className="text-white text-2xl md:text-4xl font-bold">Looking for your favorite Yarn bag?</p>
           <p className="text-white text-1xl md:text-3xl">Order it at sumline shop...</p>
