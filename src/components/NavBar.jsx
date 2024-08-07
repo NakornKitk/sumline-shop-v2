@@ -19,7 +19,7 @@ function NavBar() {
 
   
   return (
-    <nav className="bg-[#7C9097]">
+    <nav className="bg-[#7C9097] fixed w-full z-20 top-0 left-0">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           to="/sumline-shop/"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import ImageSlider from './ImageSlider.jsx';
+import icon from "@/assets/images/search-product-icon.svg";
 
 function ProductDetail({
   image,
@@ -49,7 +50,7 @@ function ProductDetail({
 
 
   return (
-    <div className="w-100% bg-white">
+    <div className="w-100% bg-white mt-[80px]">
       <div className="flex justify-between py-[20px] px-[20px] bg-[url('@/assets/images/bg.jpg')] bg-cover bg-fixed">
         <Link
           to={"/sumline-shop/"}
@@ -57,9 +58,6 @@ function ProductDetail({
         >
           Back
         </Link>
-        <h5 className="text-xl py-[5px] md:text-4xl md:py-0 text-white">
-          Product Detail
-        </h5>
         <Link
           to={"/sumline-shop/cart"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
@@ -67,11 +65,17 @@ function ProductDetail({
           Go to my cart
         </Link>
       </div>
-      <div className=' px-[20px] py-[40px] md:flex mb-[10px]">'>
-        <div className="px-[10%] py-[10px] md:px-[30px] md:max-w-[40%]" >
+      <div className="flex px-[auto] pt-[30px] px-[20px]">
+          <h5 className="text-3xl md:text-4xl text-black pl-[10%]">
+            Product Detail
+          </h5>
+          <img src={icon} alt="" className="w-10 pl-[10px]" />
+        </div>
+      <div className=' px-[20px] pt-[20px] pb-[40px] md:flex mb-[10px]">'>
+        <div className="px-[10%] py-[10px] md:max-w-[50%] min-w-[283px]" >
           <ImageSlider images={image} />
         </div>
-        <div className="min-w-[40%] pt-[20px] px-[10%] md:px-[30px]">
+        <div className="md:max-w-[50%] pt-[20px] px-[10%] md:pl-[0px]">
           <h5 className="mb-2 text-2xl md:text-4xl font-semibold tracking-tight textblack ">
             {name}
           </h5>

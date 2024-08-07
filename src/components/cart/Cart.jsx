@@ -5,7 +5,7 @@ import iconCart from "@/assets/images/shopping_cart.png";
 
 function Cart() {
   return (
-    <div className="mb-auto">
+    <div className="mb-auto mt-[80px]">
       <div className="flex justify-between py-[20px] py-[20px] px-[20px]">
         <div className="flex ">
           <h5 className="text-3xl md:text-4xl text-white pr-[10px]">

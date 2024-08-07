@@ -24,7 +24,7 @@ function ProductList() {
 
 
   return (
-    <div className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] mt-[60px] pb-10 bg-white">
+    <div className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] mt-[40px] pb-10 bg-white">
       {data.sort(dynamicSort(sortTerm))
         .filter((item) => {
           if (searchTerm == "") {
