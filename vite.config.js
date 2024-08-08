@@ -7,5 +7,5 @@ export default defineConfig({
   resolve: {
     alias:[{find:'@',replacement:'/src'}]
   },
-  base: "/sumline-shop/"
+  base: "/sumline-shop-v2/"
 })

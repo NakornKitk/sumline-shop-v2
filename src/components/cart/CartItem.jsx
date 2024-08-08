@@ -22,7 +22,7 @@ function CartItem() {
               <li className="py-3" key={item.id}>
                 <div className="flex items-center">
                   <div className="flex-1 min-w-0 ms-4">
-                    <Link to={`/sumline-shop/detail/${item.id}`}>
+                    <Link to={`/sumline-shop-v2/detail/${item.id}`}>
                     <p className="font-medium text-gray-900 hover:text-orange-600" >{item.name}</p>
                     <p className="text-gray-500">
                       Color: {item.color}

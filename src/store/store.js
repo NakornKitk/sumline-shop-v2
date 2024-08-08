@@ -5,7 +5,7 @@ import {persist} from 'zustand/middleware'
 let store = (set) => ({
         data: [],
         fetchData: async () => {
-            const response = await fetch('https://nakornkitk.github.io/sumline-shop/allproduct.json')
+            const response = await fetch('https://nakornkitk.github.io/sumline-shop-v2/allproduct.json')
             const data = await response.json()
             set({ data: data });
         },
