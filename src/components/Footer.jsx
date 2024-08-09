@@ -1,6 +1,6 @@
 import React from 'react'
-import iconGithub from "https://nakornkitk.github.io/sumline-shop-v2/github-icon.png";
-import iconLinkein from 'https://nakornkitk.github.io/sumline-shop-v2/linkedin-square-icon.png'
+import iconGithub from "https://nakornkitk.github.io/sumline-shop-v2/images/github-icon.png";
+import iconLinkein from 'https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png'
 
 function footer() {
   return (

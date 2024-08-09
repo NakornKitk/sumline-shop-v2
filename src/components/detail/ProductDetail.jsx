@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import ImageSlider from './ImageSlider.jsx';
-import icon from "https://nakornkitk.github.io/sumline-shop-v2/search-product-icon.svg";
+import icon from "https://nakornkitk.github.io/sumline-shop-v2/images/search-product-icon.svg";
 
 function ProductDetail({
   image,
