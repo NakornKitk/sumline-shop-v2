@@ -6,7 +6,7 @@ import iconCart from "https://nakornkitk.github.io/sumline-shop-v2/shopping_cart
 function Cart() {
   return (
     <div className="mb-auto mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('@/assets/images/bg.jpg')] bg-fixed">
+      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/bg.jpg')] bg-fixed">
           <Link
             to={"/sumline-shop-v2/"}
             className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
