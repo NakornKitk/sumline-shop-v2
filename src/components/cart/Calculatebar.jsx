@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import useStore from "@/store/store";
-import iconShopee from "@/assets/images/shopee-icon.png";
-import iconLine from '@/assets/images/LINE_Brand_icon.png'
-import iconInstagram from '@/assets/images/ig-instagram-icon.png'
+import iconShopee from "https://nakornkitk.github.io/sumline-shop-v2/shopee-icon.png";
+import iconLine from 'https://nakornkitk.github.io/sumline-shop-v2/LINE_Brand_icon.png'
+import iconInstagram from 'https://nakornkitk.github.io/sumline-shop-v2/ig-instagram-icon.png'
 
 function Calculatebar() {
   const { cartItems } = useStore();

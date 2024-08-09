@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
-import iconCart from "@/assets/images/shopping_cart.png";
-import Logo from "@/assets/images/logo.png";
+import iconCart from "https://nakornkitk.github.io/sumline-shop-v2/shopping_cart.png";
+import Logo from "https://nakornkitk.github.io/sumline-shop-v2/logo.png";
 
 function NavBar() {
   const { cartItems } = useStore();

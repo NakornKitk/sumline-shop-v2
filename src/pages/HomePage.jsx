@@ -2,17 +2,17 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/home/ProductList";
 import SearchBar from "@/components/home/SearchBar";
-import iconShopee from "@/assets/images/shopee-icon.png";
-import iconLine from '@/assets/images/LINE_Brand_icon.png'
-import iconInstagram from '@/assets/images/ig-instagram-icon.png'
-import Logo from "@/assets/images/logo.png";
-import icon from "@/assets/images/thread-ball-icon.svg";
+import iconShopee from "https://nakornkitk.github.io/sumline-shop-v2/shopee-icon.png";
+import iconLine from 'https://nakornkitk.github.io/sumline-shop-v2/LINE_Brand_icon.png'
+import iconInstagram from 'https://nakornkitk.github.io/sumline-shop-v2/ig-instagram-icon.png'
+import Logo from "https://nakornkitk.github.io/sumline-shop-v2/logo.png";
+import icon from "https://nakornkitk.github.io/sumline-shop-v2/thread-ball-icon.svg";
 
 function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="md:h-80 py-[20px] flex bg-[url('@/assets/images/bg.jpg')] bg-fixed mt-[80px]">
+      <div className="md:h-80 py-[20px] flex bg-[url('https://nakornkitk.github.io/sumline-shop-v2//bg.jpg')] bg-fixed mt-[80px]">
         <div className="w-[50%] pl-[7%] m-auto">
           <p className="text-white text-2xl md:text-4xl font-bold">Looking for your favorite Yarn bag?</p>
           <p className="text-white text-1xl md:text-3xl">Order it at sumline shop...</p>

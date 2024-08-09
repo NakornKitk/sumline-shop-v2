@@ -1,7 +1,7 @@
 import CartItem from './CartItem'
 import Calculatebar from './Calculatebar'
 import { Link } from "react-router-dom";
-import iconCart from "@/assets/images/shopping_cart.png";
+import iconCart from "https://nakornkitk.github.io/sumline-shop-v2/shopping_cart.png";
 
 function Cart() {
   return (
