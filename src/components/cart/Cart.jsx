@@ -1,7 +1,7 @@
 import CartItem from './CartItem'
 import Calculatebar from './Calculatebar'
 import { Link } from "react-router-dom";
-import iconCart from "https://nakornkitk.github.io/sumline-shop-v2/images/shopping_cart.png";
+
 
 function Cart() {
   return (
@@ -18,7 +18,7 @@ function Cart() {
         <h5 className="text-4xl text-black pr-[10px]">
           My Cart
         </h5>
-        <img src={iconCart} alt="" className="w-10" />
+        <img src="https://nakornkitk.github.io/sumline-shop-v2/images/shopping_cart.png" alt="" className="w-10" />
       </div>
       <div className="p-[20px] pt-[10px] md:flex md:space-x-[10px] justify-items-center">
         <CartItem />

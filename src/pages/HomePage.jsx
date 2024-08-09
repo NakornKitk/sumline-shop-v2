@@ -2,11 +2,8 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/home/ProductList";
 import SearchBar from "@/components/home/SearchBar";
-import iconShopee from "https://nakornkitk.github.io/sumline-shop-v2/images/shopee-icon.png";
-import iconLine from 'https://nakornkitk.github.io/sumline-shop-v2/images/LINE_Brand_icon.png'
-import iconInstagram from 'https://nakornkitk.github.io/sumline-shop-v2/images/ig-instagram-icon.png'
-import Logo from "https://nakornkitk.github.io/sumline-shop-v2/images/logo.png";
-import icon from "https://nakornkitk.github.io/sumline-shop-v2/images/thread-ball-icon.svg";
+
+
 
 function HomePage() {
   return (
@@ -21,25 +18,25 @@ function HomePage() {
                 href={"https://shopee.co.th/sumline.shop"}
                 className="w-10 mr-[10px] hover:scale-110 transform transition duration-2"
               >
-                <img src={iconShopee} alt=""/>
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/shopee-icon.png" alt=""/>
               </a>
               <a
                 href={"https://www.instagram.com/sumline.shop"}
                 className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
               >
-                <img src={iconInstagram} alt=""/>
+                <img src='https://nakornkitk.github.io/sumline-shop-v2/images/ig-instagram-icon.png' alt=""/>
               </a>
               <a
                 href={"https://line.me/R/ti/p/@719ojtgk"}
                 className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
               >
-                <img src={iconLine} alt=""/>
+                <img src='https://nakornkitk.github.io/sumline-shop-v2/images/LINE_Brand_icon.png' alt=""/>
               </a>
           </div>
         </div>
         <div className="pt-[20px] md:pt-[0px] min-w-[50%] m-auto">
           <img
-            src={Logo}
+            src="https://nakornkitk.github.io/sumline-shop-v2/images/logo.png"
             alt=""
             className="h-40 md:h-60 mx-auto rounded-full hover:scale-110 transform transition duration-2"
           />
@@ -51,7 +48,7 @@ function HomePage() {
           <h5 className="text-3xl md:text-4xl text-black">
             Product List
           </h5>
-          <img src={icon} alt="" className="w-10 pl-[10px]" />
+          <img src="https://nakornkitk.github.io/sumline-shop-v2/images/thread-ball-icon.svg" alt="" className="w-10 pl-[10px]" />
         </div>
         <ProductList />
       </div>

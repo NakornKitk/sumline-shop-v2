@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import ImageSlider from './ImageSlider.jsx';
-import icon from "https://nakornkitk.github.io/sumline-shop-v2/images/search-product-icon.svg";
 
 function ProductDetail({
   image,
@@ -69,7 +68,7 @@ function ProductDetail({
           <h5 className="text-3xl md:text-4xl text-black pl-[10%]">
             Product Detail
           </h5>
-          <img src={icon} alt="" className="w-10 pl-[10px]" />
+          <img src="https://nakornkitk.github.io/sumline-shop-v2/images/search-product-icon.svg" alt="" className="w-10 pl-[10px]" />
         </div>
       <div className=' px-[20px] pt-[20px] pb-[40px] md:flex mb-[10px]">'>
         <div className="px-[10%] py-[10px] md:max-w-[50%] min-w-[283px]" >
