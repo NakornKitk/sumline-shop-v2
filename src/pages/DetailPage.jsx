@@ -25,6 +25,7 @@ function DetailPage() {
             name = {item.name}
             category = {item.category}
             color = {item.color}
+            wishstatus = {item.wishstatus}
             />;
           
         })}

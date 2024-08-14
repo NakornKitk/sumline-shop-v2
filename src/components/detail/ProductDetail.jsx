@@ -11,8 +11,11 @@ function ProductDetail({
   category,
   description,
   color,
+  wishstatus,
 }) {
-  const { cartItems, setItemQuantity, addCartItem } = useStore();
+  const {setWishStatus, cartItems, setItemQuantity, addCartItem } = useStore();
+
+
   let firstQuantity = 0;
 
   cartItems.map((item) => {
@@ -41,6 +44,7 @@ function ProductDetail({
         name: name,
         price: price,
         color: color,
+        image: image[0],
         quantity: firstQuantity + 1,
       });
     }
@@ -48,9 +52,13 @@ function ProductDetail({
   };
 
 
+  const handleWishStatus = (id,status) => {
+    setWishStatus(id,status)
+  }
+
   return (
     <div className="w-100% bg-white mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg.jpg')] bg-fixed">
+      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg.jpg')] bg-cover bg-fixed">
         <Link
           to={"/sumline-shop-v2/"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
@@ -75,9 +83,14 @@ function ProductDetail({
           <ImageSlider images={image} />
         </div>
         <div className="md:max-w-[50%] pt-[20px] px-[10%] md:pl-[0px]">
-          <h5 className="mb-2 text-2xl md:text-4xl font-semibold tracking-tight textblack ">
-            {name}
-          </h5>
+          <div className="flex justify-between">
+            <h5 className="mb-2 text-2xl md:text-4xl font-semibold tracking-tight textblack ">
+              {name}
+            </h5>
+            <span className={
+              wishstatus ? 'material-symbols-outlined rounded-full bg-[#EF4444] text-white cursor-pointer flex items-center justify-center w-[40px] h-[40px]' : 'material-symbols-outlined text-black cursor-pointer flex items-center items-center justify-center w-[40px] h-[40px]'
+            } onClick={() => handleWishStatus(id,wishstatus)}>favorite</span>
+          </div>
           <p className="text-gray-500 font-semibold capitalize">
             Category: {category}
           </p>

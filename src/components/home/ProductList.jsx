@@ -3,11 +3,14 @@ import ProductCard from "@/components/home/ProductCard";
 import useStore from "@/store/store";
 
 function ProductList() {
-  const { data, fetchData, searchTerm, categoryTerm, colorTerm, sortTerm } = useStore();
+  const { data,  fetchData, searchTerm, categoryTerm, colorTerm, sortTerm } = useStore();
 
   useEffect(() => {
-    fetchData();
+    if (data[0] === undefined) {
+      fetchData();
+    }
   }, []);
+
 
   function dynamicSort(property) {
     return function(a,b) {
@@ -57,6 +60,7 @@ function ProductList() {
               name={item.name}
               color={item.color}
               category={item.category}
+              wishstatus={item.wishstatus}
             />
           );
         })}
