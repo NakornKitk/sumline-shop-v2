@@ -3,55 +3,44 @@ import useStore from "@/store/store";
 
 
 function Calculatebar() {
-  const { cartItems } = useStore();
+  const { data} = useStore();
   const allPrice = []
-  const allQuantity = []
 
-  cartItems.map((item) => {
-    allPrice.push(item.price*item.quantity)
+  data.map((item) => {
+    allPrice.push(item.price*item.cartquantity)
   })
-
-  cartItems.map((item) => {
-    allQuantity.push(item.quantity)
-  })
-
 
   const totalPrice = allPrice.reduce((partialSum, a) => partialSum + a, 0);
-  const totalQuantity = allQuantity.reduce((partialSum, a) => partialSum + a, 0);
+  // const allQuantity = []
+  // data.map((item) => {
+  //   allQuantity.push(item.quantity)
+  // })
+  // const totalQuantity = allQuantity.reduce((partialSum, a) => partialSum + a, 0);
 
   return (
-    <div className="bg-zinc-200 bg-opacity-85 rounded-2xl min-w-[29%] min-h-[240px] max-h-[280px] p-[10px] mt-[10px] md:mt-[0px] ">
-      <h5 className="text-4xl text-black mb-[10px]"> Order Summary</h5>
-      <div className="flex justify-between">
-        <h5 className="text-xl text-black"> Total Price:</h5>
-        <h5 className="text-xl font-bold text-black">{totalPrice} ฿</h5>
-      </div>
-      <div className="flex justify-between mb-[10px]">
-        <h5 className="text-xl text-black"> Total Quantity:</h5>
-        <h5 className="text-xl font-bold text-black]">{totalQuantity} pcs</h5>
-      </div>
-      <hr className="bg-black p-[0.5px] my-[5px]"></hr>
-      <h5 className=" text-2xl pb-[10px] rounded-[16px] font-bold text-black">Order Now</h5> 
-      <div className="px-[10px] flex">
-        <a
-            href={"https://shopee.co.th/sumline.shop"}
-            className="w-10 mr-[10px] hover:scale-110 transform transition duration-2"
-          >
-            <img src="https://nakornkitk.github.io/sumline-shop-v2/images/shopee-icon.png" alt=""/>
-          </a>
-          <a
-            href={"https://www.instagram.com/sumline.shop"}
-            className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
-          >
-            <img src='https://nakornkitk.github.io/sumline-shop-v2/images/ig-instagram-icon.png' alt=""/>
-          </a>
-          <a
-            href={"https://line.me/R/ti/p/@719ojtgk"}
-            className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
-          >
-            <img src='https://nakornkitk.github.io/sumline-shop-v2/images/LINE_Brand_icon.png' alt=""/>
-          </a>
-      </div>
+    <div className="">
+      <p className="text-[16px] text-black font-bold py-[30px]">CART TOTALS</p>
+      <table className="w-[100%]">
+        <tr>
+          <td className="text-[14px] font-bold text-gray-500 border border-gray-300 w-[35%] px-[10px] py-[20px]">Subtotal</td>
+          <td className="text-[14px] text-gray-500 border border-gray-300 w-[65%] px-[10px] py-[20px]">{totalPrice} ฿</td>
+        </tr>
+        <tr>
+          <td className="text-[14px] font-bold text-gray-500 border border-gray-300 w-[35%] px-[10px] py-[20px]">Shipping</td>
+          <td className="text-[14px] text-gray-500 border border-gray-300 w-[65%] px-[10px] py-[20px]">
+            <form className="font-bold" onChange={()=> alert("This function is not available!!")}>
+              <input type="radio" id="rate1" name="rate" value="0"/>
+              <label >Free Shipping</label><br/>
+              <input type="radio" id="rate2" name="rate" value="50"/>
+              <label >Flat rate</label><br/>  
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td className="text-[14px] font-bold text-gray-500 border border-gray-300 w-[35%] px-[10px] py-[20px]">Total</td>
+          <td className="text-[14px] text-gray-500 border border-gray-300 w-[65%] px-[10px] py-[20px]">{totalPrice} ฿</td>
+        </tr>
+      </table>
     </div>
     
   )

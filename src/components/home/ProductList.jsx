@@ -61,6 +61,7 @@ function ProductList() {
               color={item.color}
               category={item.category}
               wishstatus={item.wishstatus}
+              cartquantity={item.cartquantity}
             />
           );
         })}

@@ -12,7 +12,7 @@ function DetailPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="mb-auto">
+      <div className="mb-auto 2xl:px-[175px] md:px-[50px]">
         {data.filter((item) => {
           if (item.id == id) {
             return item
@@ -26,6 +26,7 @@ function DetailPage() {
             category = {item.category}
             color = {item.color}
             wishstatus = {item.wishstatus}
+            cartquantity = {item.cartquantity}
             />;
           
         })}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import ImageSlider from './ImageSlider.jsx';
+import RelateProductList from './RelateProductList.jsx';
 
 function ProductDetail({
   image,
@@ -12,116 +13,136 @@ function ProductDetail({
   description,
   color,
   wishstatus,
+  cartquantity
 }) {
-  const {setWishStatus, cartItems, setItemQuantity, addCartItem } = useStore();
 
+  const {setWishStatus, setCartQuantity } = useStore();
+  const [inboxQuantity, setinboxQuantity] = useState(1);
 
-  let firstQuantity = 0;
+  
 
-  cartItems.map((item) => {
-    if (item.id == id) {
-      firstQuantity += item.quantity;
-    }
-  });
+  const [isActive, setIsActive] = useState(true);
 
-  const [quantity, setQuantity] = useState(firstQuantity);
-
-  const handleMinusQuantity = (id) => {
-    if (quantity == 0) {
-      setQuantity(0);
-    } else {
-      setQuantity(quantity - 1);
-      setItemQuantity(id, quantity - 1);
-    }
+  const handleToggle = () => {
+    setIsActive(!isActive);
   };
-
-  const handlePlusQuantity = (id) => {
-    if (cartItems.some((item) => item.id === id)) {
-      setItemQuantity(id, quantity + 1);
-    } else {
-      addCartItem({
-        id: id,
-        name: name,
-        price: price,
-        color: color,
-        image: image[0],
-        quantity: firstQuantity + 1,
-      });
-    }
-    setQuantity((quantity) => quantity + 1);
-  };
-
-
-  const handleWishStatus = (id,status) => {
-    setWishStatus(id,status)
-  }
 
   return (
-    <div className="w-100% bg-white mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg.jpg')] bg-cover bg-fixed">
-        <Link
-          to={"/sumline-shop-v2/"}
-          className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
-        >
-          Back
-        </Link>
-        <Link
-          to={"/sumline-shop-v2/cart"}
-          className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
-        >
-          Go to my cart
-        </Link>
+    <div className="w-100% bg-white">
+       <div className="py-[100px] px-[20px] bg-[#F5F5F5]">
+          <div className="flex justify-center py-[10px]">
+            <Link
+              to={"/sumline-shop-v2/"}
+              className="text-[14px] text-[#666666] hover:text-black"
+            >
+              <p>Home</p>
+            </Link>
+            <p className="px-[14px]">&#x2022;</p>
+            <p className="text-[14px] text-[#666666]">{name}</p>
+            <p className="px-[14px]">&#x2022;</p>
+            <p className="text-[14px] text-[#666666] capitalize">{color}</p>
+          </div>
       </div>
-      <div className="flex px-[auto] pt-[30px] px-[20px]">
-          <h5 className="text-3xl md:text-4xl text-black pl-[10%]">
-            Product Detail
-          </h5>
-          <img src="https://nakornkitk.github.io/sumline-shop-v2/images/search-product-icon.svg" alt="" className="w-10 pl-[10px]" />
-        </div>
-      <div className=' px-[20px] pt-[20px] pb-[40px] md:flex mb-[10px]">'>
-        <div className="px-[10%] py-[10px] md:max-w-[50%] min-w-[283px]" >
+      
+      <div className='pt-[100px] pb-[20px] md:flex md:justify-between mb-[10px]">'>
+        <div className="w-[49%]" >
           <ImageSlider images={image} />
         </div>
-        <div className="md:max-w-[50%] pt-[20px] px-[10%] md:pl-[0px]">
+        <div className="w-[48%] md:pl-[0px]">
           <div className="flex justify-between">
-            <h5 className="mb-2 text-2xl md:text-4xl font-semibold tracking-tight textblack ">
+            <p className="mb-2 text-2xl font-bold tracking-tight text-[#222222] ">
               {name}
-            </h5>
-            <span className={
-              wishstatus ? 'material-symbols-outlined rounded-full bg-[#EF4444] text-white cursor-pointer flex items-center justify-center w-[40px] h-[40px]' : 'material-symbols-outlined text-black cursor-pointer flex items-center items-center justify-center w-[40px] h-[40px]'
-            } onClick={() => handleWishStatus(id,wishstatus)}>favorite</span>
+            </p>
           </div>
-          <p className="text-gray-500 font-semibold capitalize">
+          <p className="text-black text-3xl font-bold py-[10px]">{price} ฿</p>
+          <p className="text-gray-500 text-[14px] pt-[5px]"> {description}</p>
+
+
+          <div className="flex py-[50px] ">
+            <div className="flex justify-between border border-gray-300 w-[80px] h-[45px] text-center mr-[20px]">
+                <p className="text-gray-500e text-[14px] my-[auto] w-[70%]">
+                  {inboxQuantity}
+                </p>
+                <div className="block w-[30%]">
+                  <p
+                    className="text-gray-500 border border-gray-300 text-center h-[50%]"
+                    onClick={() => setinboxQuantity(inboxQuantity+1)}
+                  >
+                    +
+                  </p>
+                  <p
+                    className="text-gray-500  border border-gray-300 text-center h-[50%]"
+                    onClick={() => setinboxQuantity(inboxQuantity > 0 ? inboxQuantity-1 : inboxQuantity )}
+                  >
+                    -
+                  </p>
+                </div>
+            </div>
+            <div className="flex bg-[#222222] rounded-[20px] mr-[5px]" onClick={() => setCartQuantity(id, cartquantity+inboxQuantity)}>
+              <span className="material-symbols-outlined text-[16px] text-white pl-[16px] my-[auto]">
+                shopping_cart
+              </span>
+
+              <p className="text-[14px] text-white pl-[10px] pr-[15px] py-[12px]">
+                Add to cart
+              </p>
+
+            </div>
+            <span className={
+              wishstatus ? 'material-symbols-outlined rounded-full bg-[#222222] text-white cursor-pointer flex items-center justify-center w-[45px] ' : 'material-symbols-outlined rounded-full bg-[#B5B5B5] text-white cursor-pointer flex items-center justify-center w-[45px]'
+            } onClick={() => setWishStatus(id,wishstatus)}>favorite</span>
+          </div>
+
+          <div className="flex">
+            <p className="text-black uppercase text-[12px] my-[auto] pr-[30px]">SHARE THIS</p>
+            <a href="">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
+            </a>
+            <a href="">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
+            </a>
+            <a href="">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
+            </a>
+            <a href="">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
+            </a>
+            
+          </div>
+          <p className="text-gray-500 uppercase text-[12px] py-[25px]">
             Category: {category}
           </p>
-          <p className="text-gray-500 font-semibold capitalize">
-            Color: {color}
-          </p>
 
-          <p className="text-black text-3xl pt-[10px]">{price} ฿</p>
-
-          <div className="flex pt-[15px]">
-            <button
-              className="text-black font-bold mr-[5px] bg-zinc-200 px-[16px] py-[4px] rounded-[16px] hover:scale-105 transform transition duration-2"
-              onClick={() => handleMinusQuantity(id)}
-            >
-              -
-            </button>
-            <p className="text-black font-bold mr-[5px] px-[10px] py-[4px] rounded-[16px]">
-              {quantity}
-            </p>
-            <button
-              className="text-black font-bold mr-[5px] bg-zinc-200 px-[16px] py-[4px] rounded-[16px] hover:scale-105 transform transition duration-2"
-              onClick={() => handlePlusQuantity(id)}
-            >
-              +
-            </button>
-          </div>
-          <div className="pt-[15px] text-black">
-            <p className="font-semibold">Description</p>
-            <p className=""> {description}</p>
-          </div>
         </div>
+      </div>
+
+      <div className="pb-[20px]">
+        <div className= "flex py-[30px]">
+            <p className={`uppercase pr-[40px] text-[18px] font-bold cursor-pointer ${isActive ? 'text-[#444444]' : 'text-[#c6c6c6]'}`} onClick={() => handleToggle()}>
+              Description
+            </p>
+            <p className={`uppercase pr-[40px] text-[18px] font-bold cursor-pointer ${isActive ? 'text-[#c6c6c6]' : 'text-[#444444]'}`} onClick={() => handleToggle()}>
+              Additional information
+            </p>
+        </div>
+
+        <div className={`bg-[#F8F8F8] py-[30px] px-[30px] text-gray-500 text-[14px] ${isActive ? '' : 'hidden'}`}>
+            {description}
+        </div>
+
+        <div className={`${isActive ? 'hidden' : ''}`}>
+          <table className="border border-gray-300 w-[100%]">
+            <tr className="border border-gray-300">
+              <td className="border border-gray-300 px-[20px] py-[20px] font-bold text-[14px] text-gray-500 w-[20%]">Color</td>
+              <td className="border border-gray-300 capitalize px-[20px] py-[20px] text-[14px]">{color}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <p className="uppercase font-bold text-[35px] py-[20px] text-[#343434]">related products</p>
+        <RelateProductList/>
       </div>
     </div>
   );

@@ -4,28 +4,21 @@ import { Link } from "react-router-dom";
 
 function Wish() {
   return (
-    <div className="mb-auto mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg.jpg')] bg-cover bg-fixed">
-        <Link
-          to={"/sumline-shop-v2/"}
-          className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
-        >
-          Go To Home page
-        </Link>
-        <Link
-          to={"/sumline-shop-v2/cart"}
-          className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
-        >
-          Go to my cart
-        </Link>
+    <div className="mb-auto 2xl:px-[175px] md:px-[50px] ">
+      <div className="py-[100px] px-[20px] bg-[#F5F5F5]">
+        <p className="text-[26px] font-semibold text-center">WISHLIST</p>
+          <div className="flex justify-center py-[10px]">
+            <Link
+              to={"/sumline-shop-v2/"}
+              className="text-[14px] text-[#666666] hover:text-black"
+            >
+              <p>Home </p>
+            </Link>
+            <p className="px-[14px]">&#x2022;</p>
+            <p className="text-[14px] text-[#666666]">Wishlist</p>
+          </div>
       </div>
-      <div className="flex m-[20px]">
-        <h5 className="text-4xl text-black pr-[10px]">
-          My Wish List
-        </h5>
-        <span className="material-symbols-outlined pt-[10px]">favorite</span>
-      </div>
-      <div className="p-[20px] pt-[10px] md:flex md:space-x-[10px] justify-items-center">
+      <div className="py-[120px] ">
         <WishItem />
       </div>
   </div>

@@ -1,52 +1,84 @@
 import useStore from "@/store/store";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function CartItem() {
-  const { cartItems } = useStore();
+  const { data, setCartQuantity } = useStore();
 
   return (
-    <div className=" bg-zinc-200 bg-opacity-90 rounded-2xl px-[10px] min-w-[70%]">
-      <div className="flow-root">
-        <ul
-            role="list"
-            className="divide-y divide-black"
-        >
-        {cartItems
-        .filter((item) => {
-          if (item.quantity !== 0) {
-            return item;
-          }
-        })
-        .map((item) => {
-          return (
-              <li className="py-3" key={item.id}>
-                <div className="flex items-center">
-                  <div className="w-[100px] h-[100px]">
-                    <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                      <img src={item.image} alt=""/>
-                    </Link>
-                  </div>
-                  <div className="flex-1 min-w-0 ms-4">
-                    <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                    <p className="font-medium text-gray-900 hover:text-orange-600" >{item.name}</p>
-                    <p className="text-gray-500">
-                      Color: {item.color}
+    <div className="bg-opacity-90 rounded-2xl  w-[100%] ">
+      <table className="w-[100%] ">
+        <tr className="">
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-{5%]"></td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%]"></td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[30%] text-center">
+            Product
+          </td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] text-center">
+            Price
+          </td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] text-center">
+            Color
+          </td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[20%] text-center">
+            Quantity
+          </td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">
+            Subtotal
+          </td>
+        </tr>
+        {data
+          .filter((item) => {
+            if (item.cartquantity > 0) {
+              return item;
+            }
+          })
+          .map((item) => {
+            return (
+              <tr className="h-[150px]" key={item.id}>
+                <td className="border border-gray-300">
+                  <button className="flex w-[100%]">
+                    <span
+                      className="material-symbols-outlined mx-[auto] text-gray-500 hover:text-orange-600"
+                      onClick={() => setCartQuantity(item.id, 0)}
+                    >
+                      close
+                    </span>
+                  </button>
+                </td>
+                <td className="border border-gray-300 px-[10px]  py-[15px]">
+                  <Link to={`/sumline-shop-v2/detail/${item.id}`}>
+                    <img src={item.image[0]} alt="" />
+                  </Link>
+                </td>
+                <td className="border border-gray-300 text-center">
+                  <Link to={`/sumline-shop-v2/detail/${item.id}`}>
+                    <p className="text-[14px] text-gray-500 hover:text-black">
+                      {item.name}
                     </p>
-                    <p className="font-medium text-gray-900">
-                      Quantity: {item.quantity}
-                    </p>
-                    </Link>
+                  </Link>
+                </td>
+                <td className="border border-gray-300 text-center">
+                  <p className="text-[14px] text-gray-500">{item.price} ฿</p>
+                </td>
+                <td className="border border-gray-300 text-center">
+                  <p className="text-[14px] text-gray-500">{item.color}</p>
+                </td>
+                <td className="border border-gray-300 text-center">
+                  <div className="flex justify-center">
+                    <p className="text-[14px] text-gray-500 border border-gray-300 px-[18px] py-[8px] cursor-pointer " onClick={() => setCartQuantity(item.id, item.cartquantity-1)}>-</p>
+                    <p className="text-[14px] text-gray-500 border border-gray-300 px-[18px] py-[8px] ">{item.cartquantity}</p>
+                    <p className="text-[14px] text-gray-500 border border-gray-300 px-[18px] py-[8px] cursor-pointer" onClick={() => setCartQuantity(item.id, item.cartquantity+1)}>+</p>
                   </div>
-                  <div className="inline-flex items-center text-base font-semibold text-gray-900">
-                    {item.price*item.quantity} ฿
-                  </div>
-              
-                </div>
-              </li>
-          );
-        })}
-        </ul>
-      </div>
+                </td>
+                <td className="border border-gray-300 text-center">
+                  <p className="text-[14px] text-gray-500">
+                    {item.cartquantity * item.price} ฿
+                  </p>
+                </td>
+              </tr>
+            );
+          })}
+      </table>
     </div>
   );
 }

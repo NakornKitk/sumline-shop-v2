@@ -1,16 +1,25 @@
+import {useState} from 'react'
 import useStore from "@/store/store";
 import { Link } from 'react-router-dom'
 
 function CartItem() {
-  const { data, setWishStatus } = useStore();
+  const { data, setCartQuantity, setWishStatus} = useStore();
+
+
 
   return (
-    <div className=" bg-zinc-200 bg-opacity-90 rounded-2xl px-[10px] min-w-[100%] ">
-      <div className="flow-root">
-        <ul
-            role="list"
-            className="divide-y divide-black"
+    <div className="bg-opacity-90 rounded-2xl  w-[100%] ">
+      <table className="w-[100%] ">
+        <tr
+            className="w-[100%]"
         >
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-{5%]"></td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%]"></td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[40%] text-center">Product name</td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">Unit price</td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">Color</td>
+          <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%]"></td>
+        </tr>
         {data
         .filter((item) => {
           if (item.wishstatus === true) {
@@ -19,34 +28,43 @@ function CartItem() {
         })
         .map((item) => {
           return (
-              <li className="py-3" key={item.id}>
-                <div className="flex items-center">
-                  <div className="w-[100px] h-[100px]">
+              <tr className="h-[150px]" key={item.id}>
+                <td className="border border-gray-300">
+                      <button className="flex w-[100%]">
+                        <span className="material-symbols-outlined mx-[auto] text-gray-500 hover:text-orange-600" onClick={()=>setWishStatus(item.id,item.wishstatus)}>close</span>
+                      </button>
+                </td>
+                  <td className="border border-gray-300 px-[10px]  py-[15px]">
                     <Link to={`/sumline-shop-v2/detail/${item.id}`}>
                       <img src={item.image[0]} alt=""/>
                     </Link>
-                  </div>
-                  <div className="flex-1 min-w-0 ms-4">
-                    <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                      <p className="font-medium text-gray-900 hover:text-orange-600" >{item.name}</p>
-                      <p className="text-gray-500">
-                        Color: {item.color}
+                    </td>
+                    <td className="border border-gray-300 text-center">
+                      <Link to={`/sumline-shop-v2/detail/${item.id}`}>
+                        <p className="text-[14px] text-gray-500 hover:text-black" >{item.name}</p>
+                      </Link>
+                    </td>
+                    <td className="border border-gray-300 text-center">
+                      <p className="text-[14px] text-gray-500">
+                         {item.price}
                       </p>
-                    </Link>
-                  </div>
-
-                <div>
-                  <button>
-                    <span className="material-symbols-outlined" onClick={()=>setWishStatus(item.id,item.wishstatus)}>close</span>
-                  </button>
-                </div>
-              
-                </div>
-              </li>
+                    </td>
+                    <td className="border border-gray-300 text-center">
+                      <p className="text-[14px] text-gray-500">
+                         {item.color}
+                      </p>
+                    </td>
+                    <td className="border border-gray-300 text-center">
+                      <p className="text-[12px] text-gray-500 hover:text-black cursor-pointer" onClick={()=>setCartQuantity(item.id,item.cartquantity+1)}>
+                         Add to Cart
+                      </p>
+                    </td>
+                
+            
+              </tr>
           );
         })}
-        </ul>
-      </div>
+      </table>
     </div>
   );
 }
