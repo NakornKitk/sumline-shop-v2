@@ -6,7 +6,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_black.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "black",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":2,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -15,7 +16,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkgray1.1.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkgray.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "dark gray",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":3,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -24,7 +26,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_gray.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "gray",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":4,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -33,7 +36,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_white1.1.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "white",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":5,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -42,7 +46,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "beige",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":6,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -51,7 +56,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":7,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -60,7 +66,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkpink1.1.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkpink.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "dark pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":8,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -69,7 +76,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_blue1.1.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_blue.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "blue",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":9,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -78,7 +86,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightblue.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "light blue",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":10,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -87,7 +96,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightgreen1.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightgreen.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "light green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":11,
     "name": "Giant Yarn Bag (รุ่นสายถัก)",
@@ -96,7 +106,8 @@
     "category": "Giant Yarn Bag (รุ่นสายถัก)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_green.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":12,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -105,7 +116,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_black2.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_black.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "black",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":13,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -114,7 +126,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkgray.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "dark gray",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":14,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -123,7 +136,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_gray2.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_gray.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "gray",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":15,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -132,7 +146,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "white",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":16,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -141,7 +156,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_beige2.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "beige",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":17,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -150,7 +166,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_pink2.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":18,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -159,7 +176,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_darkpink.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "dark pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":19,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -168,7 +186,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_blue.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "blue",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":20,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -177,7 +196,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightblue2.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightblue.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "light blue",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":21,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -186,7 +206,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_lightgreen.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "light green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":22,
     "name": "Giant Yarn Bag (รุ่นสายคู่)",
@@ -195,7 +216,8 @@
     "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_green.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":23,
     "name": "Mini Giant Yarn Bag",
@@ -204,7 +226,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_black.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "black",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":24,
     "name": "Mini Giant Yarn Bag",
@@ -213,7 +236,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_white.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "white",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":25,
     "name": "Mini Giant Yarn Bag",
@@ -222,7 +246,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Mini_yarn_bag_green.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":26,
     "name": "Mini Giant Yarn Bag",
@@ -231,7 +256,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Mini_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_pink.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":27,
     "name": "Mini Giant Yarn Bag",
@@ -240,7 +266,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_beige.png","https://nakornkitk.github.io/sumline-shop-v2/images/freebag.jpg"],
     "color": "beige",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":28,
     "name": "Giant Yarn",
@@ -249,7 +276,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_black.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "black",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":29,
     "name": "Giant Yarn",
@@ -258,7 +286,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_white.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "white",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":30,
     "name": "Giant Yarn",
@@ -267,7 +296,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_beige.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "beige",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":31,
     "name": "Giant Yarn",
@@ -276,7 +306,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_pink.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "pink",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":32,
     "name": "Giant Yarn",
@@ -285,7 +316,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_lightblue.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "light blue",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":33,
     "name": "Giant Yarn",
@@ -294,7 +326,8 @@
     "category": "Giant Yarn",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/yarn_lightgreen.png","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "light green",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":34,
     "name": "Giant Yarn Bag (รุ่นสายคู่เเละสายถัก)",
@@ -303,7 +336,8 @@
     "category": "Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "pre order",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   },{
     "id":35,
     "name": "Mini Giant Yarn Bag",
@@ -312,7 +346,8 @@
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Mini_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "pre order",
-    "wishstatus": false
+    "wishstatus": false,
+    "cartquantity":0
   }
 ]
 
