@@ -17,9 +17,13 @@ function ProductDetail({
 }) {
 
   const {setWishStatus, setCartQuantity } = useStore();
-  const [inboxQuantity, setinboxQuantity] = useState(1);
 
-  
+  const [inboxQuantity, setinboxQuantity] = useState(1);
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const handleIndex = (index) => {
+    setImageIndex(index)
+  }
 
   const [isActive, setIsActive] = useState(true);
 
@@ -45,8 +49,9 @@ function ProductDetail({
       </div>
       
       <div className='pt-[100px] pb-[20px] md:flex md:justify-between mb-[10px]">'>
-        <div className="w-[49%]" >
-          <ImageSlider images={image} />
+        <div className="w-[49%] h-[600px]" >
+          {/* <ImageSlider images={image} /> */}
+          <img className="w-[100%] h-[100%]" src={image[imageIndex]} alt=""></img>
         </div>
         <div className="w-[48%] md:pl-[0px]">
           <div className="flex justify-between">
@@ -65,20 +70,20 @@ function ProductDetail({
                 </p>
                 <div className="block w-[30%]">
                   <p
-                    className="text-gray-500 border border-gray-300 text-center h-[50%]"
+                    className="text-gray-500 border border-gray-300 text-center h-[50%] cursor-pointer"
                     onClick={() => setinboxQuantity(inboxQuantity+1)}
                   >
                     +
                   </p>
                   <p
-                    className="text-gray-500  border border-gray-300 text-center h-[50%]"
+                    className="text-gray-500  border border-gray-300 text-center h-[50%] cursor-pointer"
                     onClick={() => setinboxQuantity(inboxQuantity > 0 ? inboxQuantity-1 : inboxQuantity )}
                   >
                     -
                   </p>
                 </div>
             </div>
-            <div className="flex bg-[#222222] rounded-[20px] mr-[5px]" onClick={() => setCartQuantity(id, cartquantity+inboxQuantity)}>
+            <div className="flex bg-[#222222] rounded-[20px] mr-[5px] cursor-pointer" onClick={() => setCartQuantity(id, cartquantity+inboxQuantity)}>
               <span className="material-symbols-outlined text-[16px] text-white pl-[16px] my-[auto]">
                 shopping_cart
               </span>
@@ -86,7 +91,6 @@ function ProductDetail({
               <p className="text-[14px] text-white pl-[10px] pr-[15px] py-[12px]">
                 Add to cart
               </p>
-
             </div>
             <span className={
               wishstatus ? 'material-symbols-outlined rounded-full bg-[#222222] text-white cursor-pointer flex items-center justify-center w-[45px] ' : 'material-symbols-outlined rounded-full bg-[#B5B5B5] text-white cursor-pointer flex items-center justify-center w-[45px]'
@@ -112,6 +116,18 @@ function ProductDetail({
           <p className="text-gray-500 uppercase text-[12px] py-[25px]">
             Category: {category}
           </p>
+            
+          <div className="flex gap-x-[15px] cursor-pointer py-[10px]">
+              {image.map((item, index) => (
+              <img
+                key={index}
+                src={item}
+                alt=""
+                className="w-[100px]"
+                onClick={() => {handleIndex(index)}}
+              />
+            ))}
+          </div>
 
         </div>
       </div>

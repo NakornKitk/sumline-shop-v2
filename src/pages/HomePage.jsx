@@ -127,14 +127,6 @@ function HomePage() {
 
       <div className="p-4 mb-auto bg-white 2xl:px-[175px] md:px-[50px]">
         <SearchBar />
-        <div className="flex px-[20px] pt-[40px] px-[auto]">
-          <h5 className="text-3xl md:text-4xl text-black">Product List</h5>
-          <img
-            src="https://nakornkitk.github.io/sumline-shop-v2/images/thread-ball-icon.svg"
-            alt=""
-            className="w-10 pl-[10px]"
-          />
-        </div>
         <ProductList />
       </div>
 

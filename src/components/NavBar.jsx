@@ -4,9 +4,8 @@ import useStore from "@/store/store";
 
 
 function NavBar() {
-  const { data } = useStore();
+  const { data, setSearchTerm } = useStore();
   const cartQuantity = [];
-  // const wishQuantity = [];
 
   data.map((item) => {
     cartQuantity.push(item.cartquantity);
@@ -17,18 +16,15 @@ function NavBar() {
     0
   );
 
-  // data.filter((item) => {
-  //   if (item.wishstatus === true) {
-  //       return item;}
-  //       }).map((item) => {
-  //         return wishQuantity.push(item.id)
-  //       })
 
-  // const totalwishQuantity = wishQuantity.reduce(
-  //   (partialSum) => partialSum + 1,
-  //         0
-  //   );
+
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
   
+
   return (
     <nav className="bg-white w-full">
       <div className="h-[110px] 2xl:px-[175px] md:px-[50px] flex flex-wrap items-center justify-between mx-auto">
@@ -61,19 +57,33 @@ function NavBar() {
           </div>
           
           
-          <Link to="/sumline-shop-v2/wish" className="text-black">
-          <span className="material-symbols-outlined flex mr-[20px] text-[20px] pt-[2px] ">
+          
+          <span className="material-symbols-outlined flex mr-[20px] text-[20px] pt-[2px] cursor-pointer" onClick={() => toggleSearch()}>
               search
           </span>
-          </Link>
+      
 
 
           <Link to="/sumline-shop-v2/wish" className="text-black">
-          <span className="material-symbols-outlined text-[20px] flex items-center pt-[2px]">menu</span>
+            <span className="material-symbols-outlined text-[20px] flex items-center pt-[2px]">menu</span>
           </Link>
 
         </div>
       </div>
+      {isSearchOpen && (
+        <div className="fixed inset-0 bg-black opacity-60 flex items-center justify-center z-50">
+            <span className="absolute right-[20px] top-[40px] material-symbols-outlined text-[50px] text-white cursor-pointer" onClick={toggleSearch}>close</span>
+            <form className="flex w-[90%] ">
+                    <input
+                        id="search"
+                        className="bg-transparent border-b-2 border-white text-[#FFFFFF] py-[10px] w-full  outline-0 "
+                        onChange={(event) => setSearchTerm(event)}
+                        placeholder="SEARCH"
+                    />
+              
+            </form>
+        </div>
+      )}
     </nav>
   );
 }

@@ -37,7 +37,7 @@ function footer() {
             <form className="border-b-[1px] border-[#E6E6E6]">
               <label className="block">Sign up for our newsletter to get the latest news, announcements, and special</label>
               <div className='flex justify-between py-[5px]'>
-                <input type="text"className="bg-[#F5F5F5] text-[11px]" placeholder="ENTER YOUR EMAIL"></input>
+                <input type="text"className="bg-[#F5F5F5] text-[11px] outline-0" placeholder="ENTER YOUR EMAIL"></input>
                 <button className="text-black font-semibold text-[13px]" onClick={()=> alert("This function is not available!!")} >SUBSCRIBE</button>
               </div>
             </form>

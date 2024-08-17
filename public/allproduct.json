@@ -330,10 +330,10 @@
     "cartquantity":0
   },{
     "id":34,
-    "name": "Giant Yarn Bag (รุ่นสายคู่เเละสายถัก)",
+    "name": "Giant Yarn Bag (รุ่นสายคู่)",
     "price": 580,
     "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่เเละสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น (สีรอ pre-order ประมาณ 5 วัน)",
-    "category": "Giant Yarn Bag",
+    "category": "Giant Yarn Bag (รุ่นสายคู่)",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "pre order",
     "wishstatus": false,
@@ -345,6 +345,16 @@
     "description": "Mini Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ size mini ไหมพรมกำมะหยี่ (สายสั้น/สาย crossbody) (สีรอ pre-order ประมาณ 5 วัน)",
     "category": "Mini Giant Yarn Bag",
     "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Mini_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
+    "color": "pre order",
+    "wishstatus": false,
+    "cartquantity":0
+  },{
+    "id":36,
+    "name": "Giant Yarn Bag (รุ่นสายถัก)",
+    "price": 580,
+    "description": "Giant Yarn Bag กระเป๋าถักไหมพรมยักษ์ รุ่นสายคู่เเละสายถัก ไหมพรมกำมะหยี่ มีถุงกันฝุ่น (สีรอ pre-order ประมาณ 5 วัน)",
+    "category": "Giant Yarn Bag (รุ่นสายถัก)",
+    "image": ["https://nakornkitk.github.io/sumline-shop-v2/images/Giant_yarn_bag_other.jpg","https://nakornkitk.github.io/sumline-shop-v2/images/comingsoon.jpg"],
     "color": "pre order",
     "wishstatus": false,
     "cartquantity":0

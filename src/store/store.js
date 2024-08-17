@@ -11,14 +11,19 @@ let store = (set) => ({
             console.log("fetch")
             set({ data: data });
         },
+
         searchTerm: "",
         setSearchTerm: (event) => set({searchTerm: event.target.value}),
+
         categoryTerm: "all",
-        setCategoryTerm: (event) => set({categoryTerm: event.target.value}),
+        setCategoryTerm: (newvalue) => set({categoryTerm: newvalue}),
+
         colorTerm: "all",
-        setColorTerm: (event) => set({colorTerm: event.target.value}),
+        setColorTerm: (newvalue) => set({colorTerm: newvalue}),
+
         sortTerm:"name",
-        setSortTerm: (event) => set({sortTerm: event.target.value}),
+        setSortTerm: (newvalue) => set({sortTerm: newvalue}),
+        
         setCartQuantity: (id, newValue) => set((state) => ({
             data: state.data.map(product =>
                 product.id === id ? { ...product, cartquantity: newValue } : product

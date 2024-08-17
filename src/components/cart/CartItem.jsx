@@ -4,6 +4,17 @@ import { Link } from "react-router-dom";
 function CartItem() {
   const { data, setCartQuantity } = useStore();
 
+  const cartQuantity = [];
+
+  data.map((item) => {
+    cartQuantity.push(item.cartquantity);
+  });
+
+  const totalcartQuantity = cartQuantity.reduce(
+    (partialSum, a) => partialSum + a,
+    0
+  );
+
   return (
     <div className="bg-opacity-90 rounded-2xl  w-[100%] ">
       <table className="w-[100%] ">
@@ -78,6 +89,25 @@ function CartItem() {
               </tr>
             );
           })}
+          { (totalcartQuantity <= 0) && (
+             <tr className="w-[100%]">
+                <td colSpan="7" className="border border-gray-300 px-[20px] py-[20px] text-[12px] text-gray-500 text-center">
+                  No products added to the cart
+                </td>
+            </tr>
+          )
+        }
+         { (totalcartQuantity > 0) && (
+             <tr className="w-[100%]">
+                <td colSpan="7" className="border border-gray-300 px-[20px] py-[15px] text-[12px] text-gray-500 text-center">
+                  <input type="text" placeholder="Coupon code" className="border border-1px text-[14px] p-[8px] mr-[10px] outline-0"></input>
+                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase mr-[5px]" onClick={()=> alert("This function is not available!!")}>Apply coupon</button>
+                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase" onClick={()=> alert("This function is not available!!")}>update cart</button>
+                </td>
+            </tr>
+          )
+         
+        }
       </table>
     </div>
   );

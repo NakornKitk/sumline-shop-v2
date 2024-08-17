@@ -5,6 +5,20 @@ import { Link } from 'react-router-dom'
 function CartItem() {
   const { data, setCartQuantity, setWishStatus} = useStore();
 
+  const wishQuantity = [];
+
+   data.filter((item) => {
+    if (item.wishstatus === true) {
+        return item;}
+        }).map((item) => {
+          return wishQuantity.push(item.id)
+        })
+
+  const totalwishQuantity = wishQuantity.reduce(
+    (partialSum) => partialSum + 1,
+          0
+    );
+
 
 
   return (
@@ -59,11 +73,19 @@ function CartItem() {
                          Add to Cart
                       </p>
                     </td>
-                
-            
               </tr>
           );
         })}
+        { (totalwishQuantity <= 0) && (
+             <tr className="w-[100%]">
+                <td colSpan="6" className="border border-gray-300 px-[20px] py-[20px] text-[12px] text-gray-500 text-center">
+                  No products added to the wishlist
+                </td>
+            </tr>
+          )
+         
+        }
+       
       </table>
     </div>
   );
