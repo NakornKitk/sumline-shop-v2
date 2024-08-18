@@ -1,5 +1,7 @@
+import { useState } from "react";
 import useStore from "@/store/store";
 import { Link } from "react-router-dom";
+import Popup from "@/components/Popup";
 
 function CartItem() {
   const { data, setCartQuantity } = useStore();
@@ -14,6 +16,9 @@ function CartItem() {
     (partialSum, a) => partialSum + a,
     0
   );
+
+  const [isPopupActive, setIsPopupActive] = useState(false)
+
 
   return (
     <div className="bg-opacity-90 rounded-2xl  w-[100%] ">
@@ -101,14 +106,19 @@ function CartItem() {
              <tr className="w-[100%]">
                 <td colSpan="7" className="border border-gray-300 px-[20px] py-[15px] text-[12px] text-gray-500 text-center">
                   <input type="text" placeholder="Coupon code" className="border border-1px text-[14px] p-[8px] mr-[10px] outline-0"></input>
-                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase mr-[5px]" onClick={()=> alert("This function is not available!!")}>Apply coupon</button>
-                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase" onClick={()=> alert("This function is not available!!")}>update cart</button>
+                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase mr-[5px]" onClick={()=> setIsPopupActive(!isPopupActive)}>Apply coupon</button>
+                  <button className="text-white bg-black p-[8px] text-[12px] font-bold uppercase" onClick={()=> setIsPopupActive(!isPopupActive)}>update cart</button>
                 </td>
             </tr>
           )
          
         }
       </table>
+
+
+      {
+       isPopupActive && <Popup setpopup = {setIsPopupActive} />
+      }
     </div>
   );
 }

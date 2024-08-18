@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Popup from "@/components/Popup";
 
 
-function footer() {
+function Footer() {
+
+  const [isPopupActive, setIsPopupActive] = useState(false)
+
+
   return (
     <footer className="bg-[#F5F5F5] py-[80px] static bottom-0">
       <div className=" flex justify-between 2xl:px-[175px] md:px-[50px]">
@@ -38,13 +43,17 @@ function footer() {
               <label className="block">Sign up for our newsletter to get the latest news, announcements, and special</label>
               <div className='flex justify-between py-[5px]'>
                 <input type="text"className="bg-[#F5F5F5] text-[11px] outline-0" placeholder="ENTER YOUR EMAIL"></input>
-                <button className="text-black font-semibold text-[13px]" onClick={()=> alert("This function is not available!!")} >SUBSCRIBE</button>
+                <div className="text-black font-semibold text-[13px] cursor-pointer" onClick={()=> setIsPopupActive(!isPopupActive)} >SUBSCRIBE</div>
               </div>
             </form>
           </div>
       </div>
+
+      {
+       isPopupActive && <Popup setpopup = {setIsPopupActive} />
+      }
     </footer>
   )
 }
 
-export default footer
+export default Footer

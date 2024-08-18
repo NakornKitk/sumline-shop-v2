@@ -5,6 +5,7 @@ import HomePage from '@/pages/HomePage';
 import DetailPage from '@/pages/DetailPage';
 import CartPage from '@/pages/CartPage';
 import WishPage from '@/pages/WishPage';
+import LoginPage from '@/pages/LoginPage';
 
 function App() {
 
@@ -24,6 +25,10 @@ function App() {
     {
       path: "/sumline-shop-v2/wish",
       element: <WishPage />
+    },
+    {
+      path: "/sumline-shop-v2/login",
+      element: <LoginPage />
     }
   ]);
 
