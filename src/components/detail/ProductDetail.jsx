@@ -99,17 +99,17 @@ function ProductDetail({
 
           <div className="flex">
             <p className="text-black uppercase text-[12px] my-[auto] pr-[30px]">SHARE THIS</p>
-            <a href="">
+            <a href="https://www.facebook.com/">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/facebook-app-round-icon.svg"></img>
+            </a>
+            <a href="https://x.com/">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/twitter-icon.svg"></img>
+            </a>
+            <a href="https://www.linkedin.com/">
               <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
             </a>
-            <a href="">
-              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
-            </a>
-            <a href="">
-              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
-            </a>
-            <a href="">
-              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/linkedin-square-icon.png"></img>
+            <a href="https://www.google.com/">
+              <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/google-icon.svg"></img>
             </a>
             
           </div>
