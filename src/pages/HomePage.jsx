@@ -1,58 +1,17 @@
+import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/home/ProductList";
 import SearchBar from "@/components/home/SearchBar";
+import ImageSlider from "@/components/home/ImageSlider";
 
 function HomePage() {
+
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="h-[460px] py-[20px] flex bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg.jpg')] bg-cover bg-fixed ">
-        <div className="w-[50%] pl-[7%] m-auto">
-          <p className="text-white text-2xl md:text-4xl font-bold">
-            Looking for your favorite Yarn bag?
-          </p>
-          <p className="text-white text-1xl md:text-3xl">
-            Order it at sumline shop...
-          </p>
-          <div className="pr-[10px] pt-[10px] flex">
-            <a
-              href={"https://shopee.co.th/sumline.shop"}
-              className="w-10 mr-[10px] hover:scale-110 transform transition duration-2"
-            >
-              <img
-                src="https://nakornkitk.github.io/sumline-shop-v2/images/shopee-icon.png"
-                alt=""
-              />
-            </a>
-            <a
-              href={"https://www.instagram.com/sumline.shop"}
-              className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
-            >
-              <img
-                src="https://nakornkitk.github.io/sumline-shop-v2/images/ig-instagram-icon.png"
-                alt=""
-              />
-            </a>
-            <a
-              href={"https://line.me/R/ti/p/@719ojtgk"}
-              className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
-            >
-              <img
-                src="https://nakornkitk.github.io/sumline-shop-v2/images/LINE_Brand_icon.png"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-        <div className="pt-[20px] md:pt-[0px] min-w-[50%] m-auto">
-          <img
-            src="https://nakornkitk.github.io/sumline-shop-v2/images/logo.png"
-            alt=""
-            className="h-40 md:h-60 mx-auto rounded-full hover:scale-110 transform transition duration-2"
-          />
-        </div>
-      </div>
+      <ImageSlider />
+      
 
       <div className="2xl:min-px-[175px] md:min-px-[50px] flex justify-between w-[70%] mx-auto py-[80px]">
         <div className="w-[30%]">
@@ -111,20 +70,21 @@ function HomePage() {
       </div>
 
       <div className="2xl:px-[175px] md:px-[50px] flex justify-between mb-[40px]">
-        <div className="w-[49.5%] bg-black">
+        <div className="w-[49.5%]  h-[250px] bg-black overflow-hidden">
             <a href="https://www.instagram.com/p/CtwSg4MPp-6/">
               <img
-                className="bg-red-200 w-[100%] h-[200px] hover:opacity-75 object-top"
-                src="https://nakornkitk.github.io/sumline-shop-v2/images/post1.jpg"
+                className=" w-[100%] hover:opacity-75"
+                src="https://nakornkitk.github.io/sumline-shop-v2/images/post1.png"
                 alt=""
               />
             </a>
         </div>
-        <div className="w-[49.5%] bg-black">
+
+        <div className="w-[49.5%] h-[250px] bg-black overflow-hidden">
           <a href="https://www.instagram.com/p/CtbgsVSP25L/">
               <img
-                className="bg-red-200 w-[100%] h-[200px] hover:opacity-75 object-top"
-                src="https://nakornkitk.github.io/sumline-shop-v2/images/post2.jpg"
+                className=" w-[100%] hover:opacity-75 "
+                src="https://nakornkitk.github.io/sumline-shop-v2/images/post2.png"
                 alt=""
               />
           </a>
@@ -149,8 +109,9 @@ function HomePage() {
         <div className="flex justify-between pb-[70px]">
           <div className="bg-black w-[225px] h-[200px] overflow-hidden">
             <a href="https://www.instagram.com/p/CscoP28SFd2/?img_index=2">
+              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
               <img
-                className=" bg-red-200 w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/black.jpg"
                 alt="instagrampic1"
               />
@@ -158,8 +119,9 @@ function HomePage() {
           </div>
           <div className="bg-black w-[225px] h-[200px] overflow-hidden">
             <a href="https://www.instagram.com/p/Csf_srCSIgx/?img_index=2">
+              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
               <img
-                className=" bg-red-200 w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/blue.jpg"
                 alt="instagrampic2"
               />
@@ -167,8 +129,9 @@ function HomePage() {
           </div>
           <div className="bg-black w-[225px] h-[200px] overflow-hidden">
             <a href="https://www.instagram.com/p/Csd89YSyq3V/?img_index=2">
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
                 <img
-                  className=" bg-red-200 w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/green.jpg"
                   alt="instagrampic3"
                 />
@@ -176,17 +139,19 @@ function HomePage() {
           </div>
           <div className="bg-black w-[225px] h-[200px] overflow-hidden">
             <a href="https://www.instagram.com/p/CscofchS9Cs/?img_index=2">
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
                 <img
-                  className=" bg-red-200 w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/red.jpg"
                   alt="instagrampic4"
                 />
             </a>
           </div>
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden">
+          <div className="bg-black w-[225px] h-[200px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/CscoXLYyAhQ/?img_index=2">
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
                 <img
-                  className=" bg-red-200 w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/white.jpg"
                   alt="instagrampic5"
                 />
