@@ -50,7 +50,6 @@ function ProductDetail({
       
       <div className='pt-[100px] pb-[20px] md:flex md:justify-between mb-[10px]">'>
         <div className="w-[49%] h-[600px]" >
-          {/* <ImageSlider images={image} /> */}
           <img className="w-[100%] h-[100%]" src={image[imageIndex]} alt=""></img>
         </div>
         <div className="w-[48%] md:pl-[0px]">
@@ -61,7 +60,6 @@ function ProductDetail({
           </div>
           <p className="text-black text-3xl font-bold py-[10px]">{price} ฿</p>
           <p className="text-gray-500 text-[14px] pt-[5px]"> {description}</p>
-
 
           <div className="flex py-[50px] ">
             <div className="flex justify-between border border-gray-300 w-[80px] h-[45px] text-center mr-[20px]">
@@ -119,13 +117,14 @@ function ProductDetail({
             
           <div className="flex gap-x-[15px] cursor-pointer py-[10px]">
               {image.map((item, index) => (
-              <img
-                key={index}
+                <div key={index} className="bg-black w-[100px] h-[100px]">
+                  <img
                 src={item}
                 alt=""
-                className="w-[100px]"
+                className=" hover:opacity-70 w-[100%] h-[100%]"
                 onClick={() => {handleIndex(index)}}
               />
+                </div>
             ))}
           </div>
 
@@ -156,8 +155,7 @@ function ProductDetail({
         </div>
       </div>
 
-      <div>
-        <p className="uppercase font-bold text-[35px] py-[20px] text-[#343434]">related products</p>
+      <div className="overflow-hidden">
         <RelateProductList/>
       </div>
     </div>

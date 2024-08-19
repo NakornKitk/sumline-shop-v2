@@ -8,7 +8,7 @@ import ImageSlider from "@/components/home/ImageSlider";
 function HomePage() {
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <NavBar />
       <ImageSlider />
       
@@ -70,20 +70,22 @@ function HomePage() {
       </div>
 
       <div className="2xl:px-[175px] md:px-[50px] flex justify-between mb-[40px]">
-        <div className="w-[49.5%]  h-[250px] bg-black overflow-hidden">
+        <div className="w-[49.5%]  h-[250px] bg-black overflow-hidden relative">
             <a href="https://www.instagram.com/p/CtwSg4MPp-6/">
+              <p className="border border-white-[2px] w-[90%] h-[80%] top-[10%] right-[5%] absolute"></p>
               <img
-                className=" w-[100%] hover:opacity-75"
+                className=" w-[100%] hover:opacity-60 transform transition duration-3"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/post1.png"
                 alt=""
               />
             </a>
         </div>
 
-        <div className="w-[49.5%] h-[250px] bg-black overflow-hidden">
+        <div className="w-[49.5%] h-[250px] bg-black overflow-hidden relative">
           <a href="https://www.instagram.com/p/CtbgsVSP25L/">
+              <p className="border border-white-[2px] w-[90%] h-[80%] top-[10%] right-[5%] absolute"></p>
               <img
-                className=" w-[100%] hover:opacity-75 "
+                className=" w-[100%] hover:opacity-60 transform transition duration-3"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/post2.png"
                 alt=""
               />
@@ -107,51 +109,51 @@ function HomePage() {
           </p>
         </div>
         <div className="flex justify-between pb-[70px]">
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden">
+          <div className="bg-black w-[220px] h-[220px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/CscoP28SFd2/?img_index=2">
-              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
+              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[30px] bg-transparent absolute top-[95px] left-[95px]"></img>
               <img
-                className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                className="w-[220px] h-[220px] hover:scale-110 hover:opacity-50 transform transition duration-3"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/black.jpg"
                 alt="instagrampic1"
               />
             </a>
           </div>
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden">
+          <div className="bg-black w-[220px] h-[220px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/Csf_srCSIgx/?img_index=2">
-              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
+              <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[30px] bg-transparent absolute top-[95px] left-[95px]"></img>
               <img
-                className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                className="w-[220px] h-[220px] hover:scale-110 hover:opacity-50 transform transition duration-3"
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/blue.jpg"
                 alt="instagrampic2"
               />
             </a>
           </div>
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden">
+          <div className="bg-black w-[220px] h-[220px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/Csd89YSyq3V/?img_index=2">
-                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[30px] bg-transparent absolute top-[95px] left-[95px]"></img>
                 <img
-                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[220px] h-[220px] hover:scale-110 hover:opacity-50 transform transition duration-3"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/green.jpg"
                   alt="instagrampic3"
                 />
             </a>
           </div>
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden">
+          <div className="bg-black w-[220px] h-[220px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/CscofchS9Cs/?img_index=2">
-                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[30px] bg-transparent absolute top-[95px] left-[95px]"></img>
                 <img
-                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[220px] h-[220px] hover:scale-110 hover:opacity-50 transform transition duration-3"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/red.jpg"
                   alt="instagrampic4"
                 />
             </a>
           </div>
-          <div className="bg-black w-[225px] h-[200px] overflow-hidden relative">
+          <div className="bg-black w-[220px] h-[220px] overflow-hidden relative">
             <a href="https://www.instagram.com/p/CscoXLYyAhQ/?img_index=2">
-                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[50px] bg-transparent absolute top-[75px] left-[87.5px]"></img>
+                <img src="https://nakornkitk.github.io/sumline-shop-v2/images/instagram-white-icon.svg" className="w-[30px] bg-transparent absolute top-[95px] left-[95px]"></img>
                 <img
-                  className="w-[225px] h-[200px] hover:scale-110 hover:opacity-75 transform transition duration-2"
+                  className="w-[220px] h-[220px] hover:scale-110 hover:opacity-50 transform transition duration-3"
                   src="https://nakornkitk.github.io/sumline-shop-v2/images/white.jpg"
                   alt="instagrampic5"
                 />
