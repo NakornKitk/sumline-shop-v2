@@ -92,21 +92,25 @@ function SearchBar() {
 
     return (
         <div>
-            <div className="flex justify-between pt-[25px]">
-                <div className="flex">
-                    <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive1 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory1()}>All Category</p>
-                    <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive2 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory2()}>Giant Yarn Bag (รุ่นสายคู่)</p>
-                    <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive3 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory3()}>Giant Yarn Bag (รุ่นสายถัก)</p>
-                    <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive4 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory4()}>Mini Giant Yan Bag</p>
-                    <p className={`text-[14px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive5 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory5()}>Giant Yarn</p>
+            <div className="lg:flex justify-between items-between pt-[25px]">
+                <div className="lg:flex">
+                    <div className="flex">
+                        <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive1 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory1()}>All Category</p>
+                        <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive2 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory2()}>Giant Yarn Bag (รุ่นสายคู่)</p>
+                        <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive3 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory3()}>Giant Yarn Bag (รุ่นสายถัก)</p>
+                    </div>
+                    <div className="flex mt-[10px] lg:mt-[0px]">
+                        <p className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive4 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory4()}>Mini Giant Yan Bag</p>
+                        <p className={`text-[14px] hover:text-black hover:border-b-2 border-black cursor-pointer ${isCategoryActive5 ? 'text-[#444444] border-b-2 border-black' : 'text-[#c6c6c6]'}`} onClick={() => handleToggleCategory5()}>Giant Yarn</p>
+                    </div>
                 </div>
-                <div className="flex">
-                    <div className="relative flex bg-[#222222] rounded-[20px] mr-[10px] cursor-pointer " onClick={() => handleToggleSort()}>
+                <div className="flex mt-[20px] lg:mt-[0px]">
+                    <div className="relative flex bg-[#222222] rounded-[20px] mr-[10px] cursor-pointer" onClick={() => handleToggleSort()}>
                         <p className="text-[12px] text-white px-[20px] py-[10px] m-[auto] uppercase">
                         SORT BY {sortTerm}
                         </p>
                         {isSortActive && (
-                                <div className="absolute top-[40px] right-[0px] fixed shadow-2xl z-50 w-[250px] bg-white p-[10px]">
+                                <div className="absolute top-[40px] lg:right-[0px] fixed shadow-2xl z-50 w-[250px] bg-white p-[10px]">
                                     <p className="text-[14px] text-gray-600 py-[2px] cursor-pointer" onClick={() => handleSortbyName()}>Sort by Name (Default)</p>
                                     <p className="text-[14px] text-gray-600 py-[2px] cursor-pointer" onClick={() => handleSortbyLow()}>Sort by price: low to high</p>
                                     <p className="text-[14px] text-gray-600 py-[2px] cursor-pointer" onClick={() => handleSortbyHigh()}>Sort by price: high to low</p>
@@ -119,7 +123,7 @@ function SearchBar() {
                         COLOR: {colorTerm}
                         </p>
                         {isColorActive && (
-                                <div className="absolute top-[40px] right-[0px] fixed shadow-2xl z-50 w-[120px] bg-white p-[10px]">
+                                <div className="absolute top-[40px] lg:right-[0px] fixed shadow-2xl z-50 w-[120px] bg-white p-[10px]">
                                     <div className="flex mb-[5px]" >
                                         <div className="bg-rose-950 w-[12px] h-[12px] my-[auto] rounded-full mr-[10px]" onClick={() => handleColorTerm("all")}></div>
                                         <p className="text-[12px] text-gray-400 hover:text-black cursor-pointer uppercase" onClick={() => handleColorTerm("all")}>all</p>

@@ -25,30 +25,18 @@ function NavBar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full">
-      <div className="h-[110px] 2xl:px-[175px] md:px-[50px] flex flex-wrap items-center justify-between mx-auto">
-        <div className="flex ">
+    <nav className="bg-white w-full px-[20px] md:px-[0px] my-[20px]">
+      <div className="h-[auto] md:px-[50px] 2xl:px-[175px] sm:flex sm:items-center sm:justify-between sm:mx-auto">
+        <div className="text-center py-[20px] sm:my-[0px] ">
           <Link
             to="/sumline-shop-v2/"
             className="text-3xl font-extralight text-black "
           >
-            <p className="my-auto mr-[50px]">Sumline Shop</p>
+            <p className="my-auto">Sumline Shop</p>
           </Link>
-          <p className="my-auto px-[16px] font-semibold text-[14px] text-[#969696] hover:text-black">
-            Home
-          </p>
-          <p className="my-auto px-[16px] font-semibold text-[14px] text-[#969696] hover:text-black">
-            Shop
-          </p>
-          <p className="my-auto px-[16px] font-semibold text-[14px] text-[#969696] hover:text-black">
-            Blog
-          </p>
-          <p className="my-auto px-[16px] font-semibold text-[14px] text-[#969696] hover:text-black">
-            Contact
-          </p>
         </div>
 
-        <div className="flex">
+        <div className="flex justify-end py-[20px] sm:py-[0px]">
           <div
             className="hover:text-black mr-[20px] py-[auto] cursor-pointer"
             onClick={() => setIsCartOpen(!isCartOpen)}

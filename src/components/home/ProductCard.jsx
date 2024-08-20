@@ -20,10 +20,10 @@ function ProductCard({image, name, id, price, category, color, wishstatus, cartq
 
 
   return (
-    <div className="mx-[auto]">
+    <div className="">
       <div className="relative" onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
         <Link to={`/sumline-shop-v2/detail/${id}`}>
-          <div className=" h-[300px] w-[260px] bg-black ">
+          <div className=" md:h-[350px] lg:h-[300px] w-[100%] bg-black ">
             <img className="h-[100%] w-[100%] hover:opacity-75" src={image[0]} alt="" />
           </div>
         </Link>
