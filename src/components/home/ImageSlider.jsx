@@ -13,16 +13,16 @@ const ImageSlider = () => {
 
   return (
     <div className="relative">
-      <div className="absolute top-[47%] w-[100%] z-[90]">
+      <div className="absolute top-[47%] w-[100%] z-[5]">
         <div className="flex justify-between">
           <span
-            className="material-symbols-outlined text-[40px] cursor-pointer text-black hover:text-red-500"
+            className="material-symbols-outlined text-[40px] cursor-pointer text-black hover:text-white"
             onClick={prevSlide}
           >
             chevron_left
           </span>
           <span
-            className="material-symbols-outlined text-[40px] cursor-pointer text-black hover:text-red-500"
+            className="material-symbols-outlined text-[40px] cursor-pointer text-black hover:text-white"
             onClick={nextSlide}
           >
             chevron_right
@@ -35,19 +35,19 @@ const ImageSlider = () => {
         style={{ transform: `translateX(-${currentIndex * 50}%)` }}
       >
         <div className=" h-[460px] bg-[url('https://nakornkitk.github.io/sumline-shop-v2/images/bg1.jpg')] bg-cover bg-center w-[100%]">
-          <div className="h-[100%] py-[20px] flex items-start pl-[175px]  ">
-            <div className="my-auto w-[40%]">
+          <div className="h-[100%] py-[20px] flex items-start pl-[50px] md:pl-[175px]">
+            <div className="my-auto md:w-[40%]">
               <p className="text-black text-3xl md:text-4xl font-light">
                 Looking for your favorite Yarn bag?
               </p>
               <p className="text-[#BB6154] text-1xl font-light md:text-2xl">
                 Order it at sumline shop...
               </p>
-              <div className="mt-[40px] py-[10px] px-[30px] flex bg-[#222222] w-[350px] items-center rounded-full">
+              <div className="mt-[40px] py-[10px] px-[30px] flex bg-[#222222] w-[170px] md:w-[310px] items-center rounded-full">
                 <p className="text-white text-[20px] font-light w-[100%]">
-                  Order now:{" "}
+                  Order now{" "}
                 </p>
-                <div className="flex gap-x-[15px] ">
+                <div className="gap-x-[10px] hidden md:flex">
                   <a
                     href={"https://shopee.co.th/sumline.shop"}
                     className="w-[35px] hover:scale-110 transform transition duration-2"
@@ -82,7 +82,7 @@ const ImageSlider = () => {
         </div>
 
         <div className=" h-[460px] bg-[#418B8A] bg-cover bg-center w-[100%]">
-          <div className="h-[100%] py-[20px] flex  2xl:px-[175px] md:px-[50px] ">
+          <div className="h-[100%] py-[20px] flex px-[10px] md:px-[50px] 2xl:px-[175px]">
             <div className=" w-[40%] mx-auto ">
               <img
                 src="https://nakornkitk.github.io/sumline-shop-v2/images/bg2.jpg"

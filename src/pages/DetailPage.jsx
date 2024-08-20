@@ -12,7 +12,7 @@ function DetailPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="mb-auto 2xl:px-[175px] md:px-[50px]">
+      <div className="mb-auto px-[20px] md:px-[50px] 2xl:px-[175px] ">
         {data.filter((item) => {
           if (item.id == id) {
             return item

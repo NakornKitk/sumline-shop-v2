@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import useStore from "@/store/store";
 
 
-function ProductCard({image, name, id, price, category, color, wishstatus, cartquantity}) {
+function RelateProductCard({image, name, id, price, category, color, wishstatus, cartquantity}) {
   const {setCartQuantity, setWishStatus,} = useStore();
 
 
@@ -23,7 +23,7 @@ function ProductCard({image, name, id, price, category, color, wishstatus, cartq
     <div className="">
       <div className="relative" onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
         <Link to={`/sumline-shop-v2/detail/${id}`}>
-          <div className=" md:h-[400px] lg:h-[300px] w-[100%] bg-black ">
+          <div className=" h-[335px] w-[335px] bg-black ">
             <img className="h-[100%] w-[100%] hover:opacity-75" src={image[0]} alt="" />
           </div>
         </Link>
@@ -51,4 +51,4 @@ function ProductCard({image, name, id, price, category, color, wishstatus, cartq
   )
 }
 
-export default ProductCard
+export default RelateProductCard

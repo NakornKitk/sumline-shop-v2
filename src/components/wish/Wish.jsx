@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Wish() {
   return (
-    <div className="mb-auto 2xl:px-[175px] md:px-[50px] ">
+    <div className="mb-auto px-[20px] md:px-[50px] 2xl:px-[175px] ">
       <div className="py-[100px] px-[20px] bg-[#F5F5F5]">
         <p className="text-[26px] font-semibold text-center">WISHLIST</p>
           <div className="flex justify-center py-[10px]">

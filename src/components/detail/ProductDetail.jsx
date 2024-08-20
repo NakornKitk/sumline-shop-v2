@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
-import ImageSlider from './ImageSlider.jsx';
 import RelateProductList from './RelateProductList.jsx';
 
 function ProductDetail({
@@ -49,10 +48,10 @@ function ProductDetail({
       </div>
       
       <div className='pt-[100px] pb-[20px] md:flex md:justify-between mb-[10px]">'>
-        <div className="w-[49%] h-[600px]" >
-          <img className="w-[100%] h-[100%]" src={image[imageIndex]} alt=""></img>
+        <div className="md:w-[52%] md:h-[600px] mb-[30px] md:mb-[0px]" >
+          <img className="w-[100%] h-[100%] " src={image[imageIndex]} alt=""></img>
         </div>
-        <div className="w-[48%] md:pl-[0px]">
+        <div className="md:w-[43%] md:pl-[0px]">
           <div className="flex justify-between">
             <p className="mb-2 text-2xl font-bold tracking-tight text-[#222222] ">
               {name}
@@ -147,10 +146,12 @@ function ProductDetail({
 
         <div className={`${isActive ? 'hidden' : ''}`}>
           <table className="border border-gray-300 w-[100%]">
-            <tr className="border border-gray-300">
-              <td className="border border-gray-300 px-[20px] py-[20px] font-bold text-[14px] text-gray-500 w-[20%]">Color</td>
-              <td className="border border-gray-300 capitalize px-[20px] py-[20px] text-[14px]">{color}</td>
-            </tr>
+            <tbody>
+              <tr className="border border-gray-300">
+                <td className="border border-gray-300 px-[20px] py-[20px] font-bold text-[14px] text-gray-500 w-[20%]">Color</td>
+                <td className="border border-gray-300 capitalize px-[20px] py-[20px] text-[14px]">{color}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
