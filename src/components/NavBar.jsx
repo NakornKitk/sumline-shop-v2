@@ -129,12 +129,10 @@ function NavBar() {
           <div className="fixed inset-0 z-50 bg-black opacity-50" onClick={() => setIsCartOpen(!isCartOpen)}>
           </div>
 
-          <div className="fixed right-[0px] top-[0px] h-[100%] w-[100%] bg-white w-[380px] z-50 px-[25px] overflow-auto no-scrollbar">
+          <div className="fixed right-[0px] top-[0px] h-[100%] w-[100%] bg-white w-[350px] sm:w-[380px] z-50 px-[25px] overflow-auto no-scrollbar">
             <span className="material-symbols-outlined text-[#222222] text-center block cursor-pointer mt-[50px] mb-[40px] text-[70px]">
               shopping_bag
             </span>
-            
-
 
             {data
               .filter((item) => {
