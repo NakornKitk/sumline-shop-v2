@@ -1,6 +1,6 @@
 # Sumline shop version 2.0
 
-Front-end E-commerce website using React, Zustand, Vite and TailwindCSS.
+Front-end e-commerce website developed by using React, Zustand, Vite, and TailwindCSS.
 
 
 Visit our website here.
