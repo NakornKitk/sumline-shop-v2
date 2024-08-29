@@ -1,17 +1,13 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
-function Popup({setpopup}) {
-    const [isPopupOpen, setIsPopupOpen] = useState(true);
-
-    const togglePopup = () => {
-        setIsPopupOpen(!isPopupOpen);
-        setpopup(false);
-      };
-
+function Popup({ popup, setpopup }) {
+  const togglePopup = () => {
+    setpopup(!popup);
+  };
 
   return (
     <div className="">
-      {isPopupOpen && (
+      {popup && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60 ">
           <div className="bg-white p-6 shadow-lg">
             <h2 className="text-lg font-bold mb-4">Sorry :(</h2>
@@ -26,7 +22,7 @@ function Popup({setpopup}) {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Popup
+export default Popup;

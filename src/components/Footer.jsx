@@ -57,7 +57,7 @@ function Footer() {
       </div>
 
       {
-       isPopupActive && <Popup setpopup = {setIsPopupActive} />
+       isPopupActive && <Popup setpopup = {setIsPopupActive} popup = {isPopupActive} />
       }
     </footer>
   )

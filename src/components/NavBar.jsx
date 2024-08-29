@@ -17,7 +17,6 @@ function NavBar() {
     0
   );
 
-
   const totalPrice = allPrice.reduce((partialSum, a) => partialSum + a, 0);
 
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -25,8 +24,8 @@ function NavBar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full px-[20px] md:px-[0px] my-[20px]">
-      <div className="h-[auto] md:px-[50px] 2xl:px-[175px] sm:flex sm:items-center sm:justify-between sm:mx-auto">
+    <nav className="bg-white w-full my-[20px]">
+      <div className="h-[auto] md:px-[50px] px-[20px] 2xl:px-[175px] sm:flex sm:items-center sm:justify-between sm:mx-auto">
         <div className="text-center py-[20px] sm:my-[0px] ">
           <Link
             to="/sumline-shop-v2/"
@@ -90,8 +89,10 @@ function NavBar() {
 
       {isMenuOpen && (
         <>
-          <div className="fixed inset-0 z-50 bg-black opacity-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          </div>
+          <div
+            className="fixed inset-0 z-50 bg-black opacity-50"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          ></div>
 
           <div className="fixed right-[0px] top-[0px] h-[100%] bg-white w-[280px] z-50">
             <span
@@ -126,8 +127,10 @@ function NavBar() {
 
       {isCartOpen && (
         <>
-          <div className="fixed inset-0 z-50 bg-black opacity-50" onClick={() => setIsCartOpen(!isCartOpen)}>
-          </div>
+          <div
+            className="fixed inset-0 z-50 bg-black opacity-50"
+            onClick={() => setIsCartOpen(!isCartOpen)}
+          ></div>
 
           <div className="fixed right-[0px] top-[0px] h-[100%] w-[100%] bg-white w-[350px] sm:w-[380px] z-50 px-[25px] overflow-auto no-scrollbar">
             <span className="material-symbols-outlined text-[#222222] text-center block cursor-pointer mt-[50px] mb-[40px] text-[70px]">
@@ -186,7 +189,7 @@ function NavBar() {
                 );
               })}
 
-            <div className={totalcartQuantity > 0 ? '' : "hidden"}>
+            <div className={totalcartQuantity > 0 ? "" : "hidden"}>
               <div>
                 <p className=" text-[14px] font-bold text-[#222222]">TOTAL:</p>
                 <p className=" text-[24px] font-bold text-[#222222]">
@@ -213,8 +216,10 @@ function NavBar() {
               </div>
             </div>
 
-            <div className={totalcartQuantity > 0 ? 'hidden' : ""}>
-              <p className="uppercase text-center text-[12px] text-[#222222]">No product in the cart.</p>
+            <div className={totalcartQuantity > 0 ? "hidden" : ""}>
+              <p className="uppercase text-center text-[12px] text-[#222222]">
+                No product in the cart.
+              </p>
             </div>
           </div>
         </>

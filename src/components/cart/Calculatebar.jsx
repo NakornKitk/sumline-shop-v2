@@ -70,7 +70,9 @@ function Calculatebar() {
         </tbody>
       </table>
 
-      {isPopupActive && <Popup setpopup={setIsPopupActive} />}
+      {isPopupActive && (
+        <Popup setpopup={setIsPopupActive} popup={isPopupActive} />
+      )}
     </div>
   );
 }
