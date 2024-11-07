@@ -15,6 +15,14 @@ function RelateProductList() {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? 6 - 1 : prevIndex - 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Auto-slide every 5 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
+
   return (
     <>
       <div className="flex justify-between">

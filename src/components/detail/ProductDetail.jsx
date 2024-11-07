@@ -24,6 +24,14 @@ function ProductDetail({
     setImageIndex(index)
   }
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % image.length);
+    }, 5000); // Auto-slide every 5 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [image.length]); // Dependency array includes images.length
+
   const [isActive, setIsActive] = useState(true);
 
   const handleToggle = () => {

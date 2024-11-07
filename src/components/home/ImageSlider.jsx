@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,6 +10,14 @@ const ImageSlider = () => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? 1 : prevIndex - 1));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Auto-slide every 5 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
 
   return (
     <div className="relative">
