@@ -7,6 +7,7 @@ import CartPage from '@/pages/CartPage';
 import WishPage from '@/pages/WishPage';
 import LoginPage from '@/pages/LoginPage';
 import ScrollToTop from '@/utils/ScrollToTop.js'
+import BackToTopButton from '@/components/BackToTopButton'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/sumline-shop-v2/wish" element={<WishPage />} />
         <Route path="/sumline-shop-v2/login" element={<LoginPage />} />
       </Routes>
+      <BackToTopButton/>
     </BrowserRouter>
   )
 }
