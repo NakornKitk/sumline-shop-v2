@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { categories, sortBy, color } from "@/utils/optionList";
+import { useState } from "react";
+// import { categories, sortBy, color } from "@/utils/optionList";
 import useStore from "@/store/store";
 
 function SearchBar() {
