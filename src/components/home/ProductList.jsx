@@ -3,10 +3,10 @@ import ProductCard from "@/components/home/ProductCard";
 import useStore from "@/store/store";
 
 function ProductList() {
-  const { data,  fetchData, searchTerm, categoryTerm, colorTerm, sortTerm } = useStore();
+  const { data,  fetchData, searchTerm, categoryTerm, colorTerm, sortTerm, theme } = useStore();
 
   useEffect(() => {
-    if (data[0] === undefined) {
+    if (data[0] === undefined || !localStorage.getItem("Sumline_Shop_Cart_V2")) {
       fetchData();
     }
   }, []);
@@ -27,7 +27,10 @@ function ProductList() {
 
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px] my-[40px]  bg-white">
+    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px] my-[40px]
+    
+    ${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}
+    >
       {data.sort(dynamicSort(sortTerm))
         .filter((item) => {
           if (searchTerm == "") {

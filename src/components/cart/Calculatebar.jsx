@@ -18,10 +18,11 @@ function Calculatebar() {
   // const totalQuantity = allQuantity.reduce((partialSum, a) => partialSum + a, 0);
 
   const [isPopupActive, setIsPopupActive] = useState(false);
+  const [isFlatRate, setIsFlatRate] = useState(0);
 
   return (
     <div className="">
-      <p className="text-[16px] text-black font-bold py-[30px]">CART TOTALS</p>
+      <p className="text-[16px] font-bold py-[30px]">CART TOTALS</p>
       <table className="w-[100%]">
         <tbody>
           <tr>
@@ -43,7 +44,8 @@ function Calculatebar() {
                   id="rate1"
                   name="rate"
                   value=""
-                  onChange={() => setIsPopupActive(!isPopupActive)}
+                  defaultChecked={true}
+                  onChange={() => setIsFlatRate(0)}
                 />
                 <label htmlFor="rate1">Free Shipping</label>
                 <br />
@@ -52,9 +54,9 @@ function Calculatebar() {
                   id="rate2"
                   name="rate"
                   value=""
-                  onChange={() => setIsPopupActive(!isPopupActive)}
+                  onChange={() => setIsFlatRate(500)}
                 />
-                <label htmlFor="rate2">Flat rate</label>
+                <label htmlFor="rate2">Flat rate (500 ฿)</label>
                 <br />
               </form>
             </td>
@@ -64,7 +66,7 @@ function Calculatebar() {
               Total
             </td>
             <td className="text-[14px] text-gray-500 border border-gray-300 w-[65%] px-[10px] py-[20px]">
-              {totalPrice} ฿
+              {totalPrice + isFlatRate} ฿
             </td>
           </tr>
         </tbody>

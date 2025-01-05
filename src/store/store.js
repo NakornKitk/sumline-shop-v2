@@ -13,6 +13,9 @@ let store = (set) => ({
     set({ data: data });
   },
 
+  theme: "light",
+  setTheme: (theme) => set({theme: theme === "light" ? "dark" : "light"}),
+
   searchTerm: "",
   setSearchTerm: (event) => set({ searchTerm: event.target.value }),
 

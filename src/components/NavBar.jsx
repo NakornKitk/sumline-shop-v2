@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 
 function NavBar() {
-  const { data, setSearchTerm, setCartQuantity } = useStore();
+  const { data, setSearchTerm, setCartQuantity, theme, setTheme } = useStore();
   const cartQuantity = [];
   const allPrice = [];
 
@@ -24,48 +24,87 @@ function NavBar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full my-[20px]">
+    <nav
+      className={`w-full py-[20px] ${
+        theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"
+      }`}
+    >
       <div className="h-[auto] md:px-[50px] px-[20px] 2xl:px-[175px] sm:flex sm:items-center sm:justify-between sm:mx-auto">
         <div className="text-center py-[20px] sm:my-[0px] ">
-          <Link
-            to="/sumline-shop-v2/"
-            className="text-3xl font-extralight text-black "
-          >
+          <Link to="/sumline-shop-v2/" className="text-3xl font-extralight ">
             <p className="my-auto">Sumline Shop</p>
           </Link>
         </div>
 
-        <div className="flex justify-end py-[20px] sm:py-[0px]">
-          <div
-            className="hover:text-black mr-[20px] py-[auto] cursor-pointer"
-            onClick={() => setIsCartOpen(!isCartOpen)}
-          >
-            <div className="relative flex">
-              <span className="absolute top-[-20px] ml-[2px] bg-[#E6E6E6] text-[#969696] text-sm w-5 h-5 rounded-full flex justify-center items-center">
-                {totalcartQuantity}
-              </span>
-              <span className="material-symbols-outlined text-black text-[20px] flex items-center">
-                shopping_bag
-              </span>
-              <p className="text-[#969696] text-[12px] hover:text-black items-center my-auto ">
-                CART
-              </p>
+        <div className="flex">
+        <button
+          id="theme-toggle"
+          type="button"
+          onClick={() => setTheme(theme)}
+          className="mr-[12px] text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5"
+        >
+          {theme === "light" ? (
+            <svg
+              id="theme-toggle-dark-icon"
+              className="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+          ) : (
+            <svg
+              id="theme-toggle-light-icon"
+              className="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+            </svg>
+          )}
+        </button>
+          <div className="flex justify-end py-[20px] sm:py-[0px]">
+            <div
+              className=" mr-[20px] py-[auto] cursor-pointer "
+              onClick={() => setIsCartOpen(!isCartOpen)}
+            >
+              <div className="relative flex mt-[12px]">
+                <span className="absolute top-[-22px] ml-[0px] bg-[#E6E6E6] text-[#969696] text-sm w-5 h-5 rounded-full flex justify-center items-center">
+                  {totalcartQuantity}
+                </span>
+                <span
+                  className={`material-symbols-outlined text-[20px] flex items-center ${
+                    theme === "light" ? "" : "hover:text-white"
+                  }`}
+                >
+                  shopping_bag
+                </span>
+                <p
+                  className={`text-[#969696] text-[12px] items-center my-auto ${
+                    theme === "light" ? "hover:text-black" : "hover:text-white"
+                  }`}
+                >
+                  CART
+                </p>
+              </div>
             </div>
+
+            <span
+              className="material-symbols-outlined flex mr-[20px] text-[20px] mt-[12px] cursor-pointer"
+              onClick={() => setIsSearchOpen(!isSearchOpen)}
+            >
+              search
+            </span>
+
+            <span
+              className="material-symbols-outlined text-[20px] flex items-center pt-[2px] cursor-pointer"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              menu
+            </span>
           </div>
-
-          <span
-            className="material-symbols-outlined flex mr-[20px] text-[20px] pt-[2px] cursor-pointer"
-            onClick={() => setIsSearchOpen(!isSearchOpen)}
-          >
-            search
-          </span>
-
-          <span
-            className="material-symbols-outlined text-[20px] flex items-center pt-[2px] cursor-pointer"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            menu
-          </span>
         </div>
       </div>
       {isSearchOpen && (

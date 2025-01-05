@@ -7,12 +7,14 @@ import useStore from "@/store/store";
 
 function DetailPage() {
   const { id } = useParams();
-  const { data } = useStore();
+  const { data, theme } = useStore();
 
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="mb-auto px-[20px] md:px-[50px] 2xl:px-[175px] ">
+      <div className={`mb-auto px-[20px] md:px-[50px] 2xl:px-[175px]
+      ${theme === "light" ? "bg-white" : "bg-[#222222]"}`}
+      >
         {data.filter((item) => {
           if (item.id == id) {
             return item

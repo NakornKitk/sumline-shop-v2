@@ -3,14 +3,23 @@ import Footer from "@/components/Footer";
 import ProductList from "@/components/home/ProductList";
 import SearchBar from "@/components/home/SearchBar";
 import ImageSlider from "@/components/home/ImageSlider";
+import useStore from "@/store/store";
 
 function HomePage() {
+  const { theme } = useStore();
+
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className={`flex flex-col min-h-screen overflow-hidden
+    ${theme === "light" ? "bg-white" : "bg-[#222222]"}`}
+    
+    >
       <NavBar />
       <ImageSlider />
 
-      <div className="2xl:min-px-[175px] md:min-px-[50px] md:flex justify-between w-[70%] mx-auto py-[80px]">
+      <div
+        className={`2xl:min-px-[175px] md:min-px-[50px] md:flex justify-between w-[100%] px-[15%] py-[80px]
+      ${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}
+      >
         <div className="md:w-[30%] py-[20px]">
           <div className="relative bg-[#F1F1F1] w-[70px] h-[70px] rounded-full mx-auto ">
             <a href={"https://shopee.co.th/sumline.shop"}>
@@ -22,7 +31,7 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://shopee.co.th/sumline.shop"}>
-            <p className="text-center text-[#383838] uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
               Shopee
             </p>
           </a>
@@ -41,11 +50,13 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://www.instagram.com/sumline.shop"}>
-            <p className="text-center text-[#383838] uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
               Instagram
             </p>
           </a>
-          <p className="text-center text-[13px] text-[#909090]">View our product</p>
+          <p className="text-center text-[13px] text-[#909090]">
+            View our product
+          </p>
         </div>
         <div className="md:w-[30%] py-[20px]">
           <div className="relative bg-[#F1F1F1] w-[70px] h-[70px] rounded-full mx-auto">
@@ -58,7 +69,7 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://line.me/R/ti/p/@719ojtgk"}>
-            <p className="text-center text-[#383838] uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
               Line
             </p>
           </a>
@@ -66,7 +77,10 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="px-[20px] md:px-[50px] 2xl:px-[175px] md:flex justify-between mb-[40px] ">
+      <div
+        className={`px-[20px] md:px-[50px] 2xl:px-[175px] md:flex justify-between mb-[40px]
+      ${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}
+      >
         <div className="mb-[10px] md:mb-[0px] h-[100%] md:w-[49.5%] bg-black overflow-hidden relative">
           <a href="https://www.instagram.com/p/CtwSg4MPp-6/">
             <p className="border border-white-[2px] w-[90%] h-[90%] top-[5%] right-[5%] absolute"></p>
@@ -90,16 +104,19 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="p-4 mb-auto bg-white 2xl:px-[175px] md:px-[50px]">
+      <div className={`p-4 mb-auto 2xl:px-[175px] md:px-[50px]
+      ${theme === "light" ? "bg-white" : "bg-[#222222]"}`}
+      >
         <SearchBar />
         <ProductList />
       </div>
 
-      <div className="2xl:px-[175px] md:px-[50px]">
+      <div
+        className={`2xl:px-[175px] md:px-[50px]
+      ${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}
+      >
         <div className="border-t-[1px] border-[#E6E6E6] pt-[70px] pb-[30px]">
-          <p className="text-center text-[#222222] text-3xl font-bold">
-            INSTAGRAM
-          </p>
+          <p className="text-center text-3xl font-bold">INSTAGRAM</p>
           <p className="text-center text-[12px] text-[#909090] pt-[10px] uppercase">
             visit sumline shop on instagram
           </p>

@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import { Link } from "react-router-dom";
 import Popup from "@/components/Popup";
 
 
 function Footer() {
   const [isPopupActive, setIsPopupActive] = useState(false)
-
 
   return (
     <footer className="bg-[#F5F5F5] py-[80px] static bottom-0 px-[20px] md:px-[0px]">

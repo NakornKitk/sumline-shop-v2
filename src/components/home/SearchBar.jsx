@@ -19,6 +19,7 @@ function SearchBar() {
     setIsCategoryMiniActive,
     isCategoryYarnActive,
     setIsCategoryYarnActive,
+    theme
   } = useStore();
 
   const handleToggleCategoryAll = () => {
@@ -77,36 +78,45 @@ function SearchBar() {
   };
 
   return (
-    <div>
+    <div className={`${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}>
       <div className="lg:flex justify-between items-between pt-[25px]">
         <div className="lg:flex">
           <div className="flex">
             <p
-              className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${
+              className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
+                ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
+                ${
                 isCategoryAllActive
-                  ? "text-[#444444] border-b-2 border-black"
+                  ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
-              }`}
+              }
+              `}
               onClick={() => handleToggleCategoryAll()}
             >
               All Category
             </p>
             <p
-              className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${
+               className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
+                ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
+                ${
                 isCategoryDoubleActive
-                  ? "text-[#444444] border-b-2 border-black"
+                  ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
-              }`}
+              }
+              `}
               onClick={() => handleToggleCategoryDouble()}
             >
               Giant Yarn Bag (รุ่นสายคู่)
             </p>
             <p
-              className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${
+               className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
+                ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
+                ${
                 isCategorySingleActive
-                  ? "text-[#444444] border-b-2 border-black"
+                  ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
-              }`}
+              }
+              `}
               onClick={() => handleToggleCategorySingle()}
             >
               Giant Yarn Bag (รุ่นสายถัก)
@@ -114,21 +124,27 @@ function SearchBar() {
           </div>
           <div className="flex mt-[10px] lg:mt-[0px]">
             <p
-              className={`text-[14px] mr-[40px] hover:text-black hover:border-b-2 border-black cursor-pointer ${
+               className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
+                ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
+                ${
                 isCategoryMiniActive
-                  ? "text-[#444444] border-b-2 border-black"
+                  ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
-              }`}
+              }
+              `}
               onClick={() => handleToggleCategoryMini()}
             >
               Mini Giant Yan Bag
             </p>
             <p
-              className={`text-[14px] hover:text-black hover:border-b-2 border-black cursor-pointer ${
+               className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
+                ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
+                ${
                 isCategoryYarnActive
-                  ? "text-[#444444] border-b-2 border-black"
+                  ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
-              }`}
+              }
+              `}
               onClick={() => handleToggleCategoryGiant()}
             >
               Giant Yarn
@@ -137,10 +153,12 @@ function SearchBar() {
         </div>
         <div className="flex mt-[20px] lg:mt-[0px]">
           <div
-            className="relative flex bg-[#222222] rounded-[20px] mr-[10px] cursor-pointer"
+            className={`relative flex rounded-[20px] mr-[10px] cursor-pointer
+            ${theme === "light" ? "bg-[#222222] text-white" : "bg-white text-black"}`}
+
             onClick={() => handleToggleSort()}
           >
-            <p className="text-[12px] text-white px-[20px] py-[10px] m-[auto] uppercase">
+            <p className="text-[12px] px-[20px] py-[10px] m-[auto] uppercase">
               SORT BY {sortTerm}
             </p>
             {isSortActive && (
@@ -167,12 +185,15 @@ function SearchBar() {
             )}
           </div>
           <div
-            className="relative flex bg-[#222222] rounded-[20px] cursor-pointer "
+            className={`relative flex rounded-[20px] cursor-pointer
+              ${theme === "light" ? "bg-[#222222] text-white" : "bg-white text-black"}`}
             onClick={() => handleToggleColor()}
           >
-            <p className="text-[12px] text-white px-[20px] py-[10px] m-[auto] uppercase">
+            <p className="text-[12px] px-[20px] py-[10px] m-[auto] uppercase">
               COLOR: {colorTerm}
             </p>
+
+
             {isColorActive && (
               <div className="absolute top-[40px] lg:right-[0px] fixed shadow-2xl z-50 w-[120px] bg-white p-[10px]">
                 <div className="flex mb-[5px]">

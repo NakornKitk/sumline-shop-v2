@@ -3,7 +3,7 @@ import RelateProductCard from "@/components/detail/RelateProductCard";
 import useStore from "@/store/store";
 
 function RelateProductList() {
-  const { data } = useStore();
+  const { data, theme } = useStore();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -26,18 +26,18 @@ function RelateProductList() {
   return (
     <>
       <div className="flex justify-between">
-        <p className="uppercase font-bold text-[35px] py-[20px] text-[#343434]">
+        <p className="uppercase font-bold text-[35px] py-[20px]">
           related products
         </p>
         <div className="flex justify-between py-[20px]">
           <span
-            className="material-symbols-outlined text-[40px] cursor-pointer text-gray-500 hover:text-black my-[auto] transform -translate-y-1/2"
+            className="material-symbols-outlined text-[40px] cursor-pointer hover:text-[#C54C37] my-[auto] transform -translate-y-1/2"
             onClick={prevSlide}
           >
             chevron_left
           </span>
           <span
-            className="material-symbols-outlined text-[40px] cursor-pointer text-gray-500 hover:text-black my-[auto] transform -translate-y-1/2"
+            className="material-symbols-outlined text-[40px] cursor-pointer hover:text-[#C54C37] my-[auto] transform -translate-y-1/2"
             onClick={nextSlide}
           >
             chevron_right
@@ -46,7 +46,7 @@ function RelateProductList() {
       </div>
 
       <div
-        className="flex justify-between gap-x-[55px] pt-[10px] pb-[100px] bg-white transition-transform duration-500"
+        className="flex justify-between gap-x-[55px] pt-[10px] pb-[100px] transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 390}px)` }}
       >
         {data

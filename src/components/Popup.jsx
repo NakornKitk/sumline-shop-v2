@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 function Popup({ popup, setpopup }) {
   const togglePopup = () => {
     setpopup(!popup);

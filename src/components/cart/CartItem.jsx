@@ -1,11 +1,12 @@
 import { useState } from "react";
 import useStore from "@/store/store";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Popup from "@/components/Popup";
+import PopupOrder from "@/components/PopupOrder";
 
 function CartItem() {
   const { data, setCartQuantity } = useStore();
-
+  const navigate = useNavigate();
   const cartQuantity = [];
 
   data.map((item) => {
@@ -18,6 +19,7 @@ function CartItem() {
   );
 
   const [isPopupActive, setIsPopupActive] = useState(false);
+  const [isPopupOrderActive, setIsPopupOrderActive] = useState(false);
 
   return (
     <div className="bg-opacity-90 rounded-2xl  w-[100%] ">
@@ -56,7 +58,7 @@ function CartItem() {
                   <td className="border border-gray-300">
                     <button className="flex w-[100%]">
                       <span
-                        className="material-symbols-outlined mx-[auto] text-gray-500 hover:text-orange-600"
+                        className="material-symbols-outlined mx-[auto]  hover:text-orange-600"
                         onClick={() => setCartQuantity(item.id, 0)}
                       >
                         close
@@ -70,32 +72,32 @@ function CartItem() {
                   </td>
                   <td className="border border-gray-300 text-center">
                     <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                      <p className="text-[14px] text-gray-500 hover:text-black">
+                      <p className="text-[14px]  hover:text-black">
                         {item.name}
                       </p>
                     </Link>
                   </td>
                   <td className="border border-gray-300 text-center">
-                    <p className="text-[14px] text-gray-500">{item.price} ฿</p>
+                    <p className="text-[14px] ">{item.price} ฿</p>
                   </td>
                   <td className="border border-gray-300 text-center">
-                    <p className="text-[14px] text-gray-500">{item.color}</p>
+                    <p className="text-[14px] ">{item.color}</p>
                   </td>
                   <td className="border border-gray-300 text-center">
                     <div className="md:flex justify-center">
                       <p
-                        className="text-[14px] text-gray-500 border border-gray-300 md:px-[18px] py-[8px] cursor-pointer "
+                        className="text-[14px]  border border-gray-300 md:px-[18px] py-[8px] cursor-pointer "
                         onClick={() =>
                           setCartQuantity(item.id, item.cartquantity - 1)
                         }
                       >
                         -
                       </p>
-                      <p className="text-[14px] text-gray-500 border border-gray-300 md:px-[18px] py-[8px] ">
+                      <p className="text-[14px] border border-gray-300 md:px-[18px] py-[8px] ">
                         {item.cartquantity}
                       </p>
                       <p
-                        className="text-[14px] text-gray-500 border border-gray-300 md:px-[18px] py-[8px] cursor-pointer"
+                        className="text-[14px] border border-gray-300 md:px-[18px] py-[8px] cursor-pointer"
                         onClick={() =>
                           setCartQuantity(item.id, item.cartquantity + 1)
                         }
@@ -105,7 +107,7 @@ function CartItem() {
                     </div>
                   </td>
                   <td className="border border-gray-300 text-center">
-                    <p className="text-[14px] text-gray-500">
+                    <p className="text-[14px]">
                       {item.cartquantity * item.price} ฿
                     </p>
                   </td>
@@ -118,7 +120,7 @@ function CartItem() {
             <tr className="w-[100%]">
               <td
                 colSpan="7"
-                className="border border-gray-300 px-[20px] py-[20px] text-[12px] text-gray-500 text-center"
+                className="border border-gray-300 px-[20px] py-[20px] text-[12px] text-center"
               >
                 No products added to the cart
               </td>
@@ -138,16 +140,22 @@ function CartItem() {
                   className="border border-1px text-[14px] p-[8px] mb-[10px] md:mb-[0px] mr-[10px] outline-0"
                 ></input>
                 <button
-                  className="text-white bg-black p-[8px] text-[12px] font-bold uppercase mr-[5px]"
+                  className="text-white bg-[#756E64] p-[8px] text-[12px] font-bold uppercase mr-[5px]"
                   onClick={() => setIsPopupActive(!isPopupActive)}
                 >
                   Apply coupon
                 </button>
                 <button
-                  className="text-white bg-black p-[8px] text-[12px] font-bold uppercase"
-                  onClick={() => setIsPopupActive(!isPopupActive)}
+                  className="text-white bg-[#756E64] p-[8px] text-[12px] font-bold uppercase"
+                  onClick={() => {
+                    setIsPopupOrderActive(!isPopupOrderActive)
+                    localStorage.removeItem("Sumline_Shop_Cart_V2");
+                    setTimeout(() => {
+                      navigate("/sumline-shop-v2/")
+                    }, 1000);
+                  }}
                 >
-                  update cart
+                  Order Now
                 </button>
               </td>
             </tr>
@@ -157,6 +165,10 @@ function CartItem() {
 
       {isPopupActive && (
         <Popup setpopup={setIsPopupActive} popup={isPopupActive} />
+      )}
+
+      {isPopupOrderActive && (
+        <PopupOrder popup={isPopupOrderActive} />
       )}
       
     </div>

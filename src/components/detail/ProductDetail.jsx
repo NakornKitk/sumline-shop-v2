@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import RelateProductList from './RelateProductList.jsx';
@@ -15,7 +15,7 @@ function ProductDetail({
   cartquantity
 }) {
 
-  const {setWishStatus, setCartQuantity } = useStore();
+  const {setWishStatus, setCartQuantity, theme } = useStore();
 
   const [inboxQuantity, setinboxQuantity] = useState(1);
   const [imageIndex, setImageIndex] = useState(0)
@@ -39,19 +39,21 @@ function ProductDetail({
   };
 
   return (
-    <div className="w-100% bg-white">
+    <div className={`w-100%
+    ${theme === "light" ? "bg-white text-[#222222]" : "bg-[#222222] text-white"}`}
+    >
        <div className="py-[100px] px-[20px] bg-[#F5F5F5]">
-          <div className="flex justify-center py-[10px]">
+          <div className="flex justify-center py-[10px] text-[#666666] ">
             <Link
               to={"/sumline-shop-v2/"}
-              className="text-[14px] text-[#666666] hover:text-black"
+              className="text-[14px] hover:text-black"
             >
               <p>Home</p>
             </Link>
             <p className="px-[14px]">&#x2022;</p>
-            <p className="text-[14px] text-[#666666]">{name}</p>
+            <p className="text-[14px]">{name}</p>
             <p className="px-[14px]">&#x2022;</p>
-            <p className="text-[14px] text-[#666666] capitalize">{color}</p>
+            <p className="text-[14px] capitalize">{color}</p>
           </div>
       </div>
       
@@ -61,11 +63,11 @@ function ProductDetail({
         </div>
         <div className="md:w-[43%] md:pl-[0px]">
           <div className="flex justify-between">
-            <p className="mb-2 text-2xl font-bold tracking-tight text-[#222222] ">
+            <p className="mb-2 text-2xl font-bold tracking-tight ">
               {name}
             </p>
           </div>
-          <p className="text-black text-3xl font-bold py-[10px]">{price} ฿</p>
+          <p className="text-3xl font-bold py-[10px]">{price} ฿</p>
           <p className="text-gray-500 text-[14px] pt-[5px]"> {description}</p>
 
           <div className="flex py-[50px] ">
@@ -88,7 +90,7 @@ function ProductDetail({
                   </p>
                 </div>
             </div>
-            <div className="flex bg-[#222222] rounded-[20px] mr-[5px] cursor-pointer" onClick={() => setCartQuantity(id, cartquantity+inboxQuantity)}>
+            <div className="flex bg-[#A49C8E] rounded-[20px] mr-[5px] cursor-pointer hover:bg-[#777064]" onClick={() => setCartQuantity(id, cartquantity+inboxQuantity)}>
               <span className="material-symbols-outlined text-[16px] text-white pl-[16px] my-[auto]">
                 shopping_cart
               </span>
@@ -98,12 +100,12 @@ function ProductDetail({
               </p>
             </div>
             <span className={
-              wishstatus ? 'material-symbols-outlined rounded-full bg-[#222222] text-white cursor-pointer flex items-center justify-center w-[45px] ' : 'material-symbols-outlined rounded-full bg-[#B5B5B5] text-white cursor-pointer flex items-center justify-center w-[45px]'
+              wishstatus ? 'material-symbols-outlined rounded-full bg-[#C54C37] text-white cursor-pointer flex items-center justify-center w-[45px] ' : 'material-symbols-outlined rounded-full bg-[#B5B5B5] text-white cursor-pointer flex items-center justify-center w-[45px] hover:bg-[#C54C37]'
             } onClick={() => setWishStatus(id,wishstatus)}>favorite</span>
           </div>
 
           <div className="flex">
-            <p className="text-black uppercase text-[12px] my-[auto] pr-[30px]">SHARE THIS</p>
+            <p className="uppercase text-[12px] my-[auto] pr-[30px]">SHARE THIS</p>
             <a href="https://www.facebook.com/">
               <img  className="h-[18px] pr-[30px]"src="https://nakornkitk.github.io/sumline-shop-v2/images/facebook-app-round-icon.svg"></img>
             </a>
