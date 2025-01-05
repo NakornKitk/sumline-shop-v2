@@ -196,12 +196,12 @@ function NavBar() {
                       ></img>
                       <div className="">
                         <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                          <p className="text-[14px] uppercase">{item.name}</p>
+                          <p className="text-[14px] uppercase text-black">{item.name}</p>
                         </Link>
                         <p className="text-[14px] capitalize text-gray-500">
                           color: {item.color}
                         </p>
-                        <div className="flex">
+                        <div className="flex text-black">
                           <p className="text-[13px] flex items-center">
                             {item.cartquantity}
                           </p>
