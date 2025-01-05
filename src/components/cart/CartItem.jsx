@@ -26,21 +26,21 @@ function CartItem() {
       <table className="w-[100%] ">
         <thead>
           <tr className="">
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-{5%]"></td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] min-w-[100px] hidden md:table-cell"></td>
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[30%] text-center">
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] w-{5%]"></td>
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px]  w-[10%] min-w-[100px] hidden md:table-cell"></td>
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px]  w-[30%] text-center">
               Product
             </td>
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] text-center">
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] w-[10%] text-center">
               Price
             </td>
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] text-center">
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] w-[10%] text-center">
               Color
             </td>
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[20%] text-center">
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] w-[20%] text-center">
               Quantity
             </td>
-            <td className="border border-gray-300  md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">
+            <td className="border border-gray-300  md:px-[20px] py-[20px] font-semibold text-[14px] w-[15%] text-center">
               Subtotal
             </td>
           </tr>

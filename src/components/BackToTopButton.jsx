@@ -24,7 +24,7 @@ function BackToTopButton() {
   return (
     <div>
         {backToTopButton && (
-            <button   className="fixed bottom-[50px] right-[50px] h-[50px] w-[50px] bg-[#A49C8E] rounded-md text-xl text-white font-bold flex items-center justify-center text-center shadow-lg hover:bg-[#C54C37] transition duration-300" onClick={scrollUp}>
+            <button className="fixed bottom-[50px] right-[50px] h-[50px] w-[50px] bg-[#A49C8E] rounded-md text-xl text-white font-bold flex items-center justify-center text-center shadow-lg hover:bg-[#C54C37] transition duration-300" onClick={scrollUp}>
                 <FaArrowUp className="" />
             </button>
         ) }

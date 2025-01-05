@@ -5,7 +5,7 @@ import Wish from '@/components/wish/Wish'
 
 function WishPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen">
       <NavBar />
       <Wish />
       <Footer/>

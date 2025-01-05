@@ -10,7 +10,7 @@ function CartPage() {
   
   return (
     <div className={`flex flex-col min-h-screen
-    ${theme === "light" ? "bg-white text-black" : "bg-[#222222] text-white"}`}
+    ${theme === "light" ? "bg-white text-gray-500" : "bg-[#222222] text-white"}`}
     >
       <NavBar />
       <Cart/>

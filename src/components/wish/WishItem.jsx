@@ -27,18 +27,18 @@ function CartItem() {
       <table className="w-[100%] ">
         <thead>
           <tr className="w-[100%]">
-            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-{5%]"></td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[10%] min-w-[100px] hidden md:table-cell"></td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[40%] text-center">
+            <td className="border border-gray-300 md:px-[20px] py-[20px] font-semibold text-[14px] w-{5%]"></td>
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px]  w-[10%] min-w-[100px] hidden md:table-cell"></td>
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] w-[40%] text-center">
               Product name
             </td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] w-[15%] text-center">
               Unit price
             </td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%] text-center">
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] w-[15%] text-center">
               Color
             </td>
-            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] text-gray-500 w-[15%]"></td>
+            <td className="border border-gray-300 px-[20px] py-[20px] font-semibold text-[14px] w-[15%]"></td>
           </tr>
         </thead>
         {data
@@ -54,7 +54,7 @@ function CartItem() {
                   <td className="border border-gray-300">
                     <button className="flex w-[100%]">
                       <span
-                        className="material-symbols-outlined mx-[auto] text-gray-500 hover:text-orange-600"
+                        className="material-symbols-outlined mx-[auto]  hover:text-orange-600"
                         onClick={() => setWishStatus(item.id, item.wishstatus)}
                       >
                         close
@@ -68,20 +68,20 @@ function CartItem() {
                   </td>
                   <td className="border border-gray-300 text-center">
                     <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                      <p className="text-[14px] text-gray-500 hover:text-black">
+                      <p className="text-[14px]  hover:text-black">
                         {item.name}
                       </p>
                     </Link>
                   </td>
                   <td className="border border-gray-300 text-center">
-                    <p className="text-[14px] text-gray-500">{item.price}</p>
+                    <p className="text-[14px] ">{item.price}</p>
                   </td>
                   <td className="border border-gray-300 text-center">
-                    <p className="text-[14px] text-gray-500">{item.color}</p>
+                    <p className="text-[14px] ">{item.color}</p>
                   </td>
                   <td className="border border-gray-300 text-center">
                     <p
-                      className="text-[12px] text-gray-500 hover:text-black cursor-pointer"
+                      className="text-[12px] hover:text-black cursor-pointer"
                       onClick={() =>
                         setCartQuantity(item.id, item.cartquantity + 1)
                       }
@@ -98,7 +98,7 @@ function CartItem() {
             <tr className="w-[100%]">
               <td
                 colSpan="6"
-                className="border border-gray-300 px-[20px] py-[20px] text-[12px] text-gray-500 text-center"
+                className="border border-gray-300 px-[20px] py-[20px] text-[12px]text-center"
               >
                 No products added to the wishlist
               </td>
