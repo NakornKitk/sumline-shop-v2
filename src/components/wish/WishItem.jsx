@@ -81,7 +81,7 @@ function CartItem() {
                   </td>
                   <td className="border border-gray-300 text-center">
                     <p
-                      className="text-[12px] hover:text-black cursor-pointer"
+                      className="text-[12px] hover:text-[#C54C37] cursor-pointer"
                       onClick={() =>
                         setCartQuantity(item.id, item.cartquantity + 1)
                       }
