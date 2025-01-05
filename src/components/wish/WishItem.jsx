@@ -68,7 +68,7 @@ function CartItem() {
                   </td>
                   <td className="border border-gray-300 text-center">
                     <Link to={`/sumline-shop-v2/detail/${item.id}`}>
-                      <p className="text-[14px]  hover:text-black">
+                      <p className="text-[14px]  hover:text-[#C54C37]">
                         {item.name}
                       </p>
                     </Link>

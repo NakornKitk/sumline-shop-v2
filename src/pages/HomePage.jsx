@@ -31,7 +31,7 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://shopee.co.th/sumline.shop"}>
-            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-[#C54C37]">
               Shopee
             </p>
           </a>
@@ -50,7 +50,7 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://www.instagram.com/sumline.shop"}>
-            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-[#C54C37]">
               Instagram
             </p>
           </a>
@@ -69,7 +69,7 @@ function HomePage() {
             </a>
           </div>
           <a href={"https://line.me/R/ti/p/@719ojtgk"}>
-            <p className="text-center uppercase font-semibold py-[10px] hover:text-black">
+            <p className="text-center uppercase font-semibold py-[10px] hover:text-[#C54C37]">
               Line
             </p>
           </a>
