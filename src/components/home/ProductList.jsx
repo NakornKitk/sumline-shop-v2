@@ -3,7 +3,7 @@ import ProductCard from "@/components/home/ProductCard";
 import useStore from "@/store/store";
 
 function ProductList() {
-  const { data,  fetchData, searchTerm, categoryTerm, colorTerm, sortTerm, theme } = useStore();
+  const { data,  fetchData, searchTerm, activeCategory, colorTerm, sortTerm, theme } = useStore();
 
   useEffect(() => {
     if (data[0] === undefined || !localStorage.getItem("Sumline_Shop_Cart_V2")) {
@@ -40,9 +40,9 @@ function ProductList() {
           }
         })
         .filter((item) => {
-          if (categoryTerm == "all") {
+          if (activeCategory == "all") {
             return item;
-          } else if (item.category == categoryTerm) {
+          } else if (item.category == activeCategory) {
             return item;
           }
         })

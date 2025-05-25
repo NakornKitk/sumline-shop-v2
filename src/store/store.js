@@ -14,13 +14,11 @@ let store = (set) => ({
   },
 
   theme: "light",
-  setTheme: (theme) => set({theme: theme === "light" ? "dark" : "light"}),
+  setTheme: (theme) => set({ theme: theme === "light" ? "dark" : "light" }),
 
   searchTerm: "",
   setSearchTerm: (event) => set({ searchTerm: event.target.value }),
 
-  categoryTerm: "all",
-  setCategoryTerm: (newvalue) => set({ categoryTerm: newvalue }),
 
   colorTerm: "all",
   setColorTerm: (newvalue) => set({ colorTerm: newvalue }),
@@ -41,51 +39,15 @@ let store = (set) => ({
       ),
     })),
 
-  isCategoryAllActive: true,
-  setIsCategoryAllActive: () =>
+
+
+  activeCategory: 'all',
+
+  setActiveCategory: (category) =>
     set({
-      isCategoryAllActive: true,
-      isCategorySingleActive: false,
-      isCategoryDoubleActive: false,
-      isCategoryMiniActive: false,
-      isCategoryYarnActive: false,
-    }),
-  isCategorySingleActive: false,
-  setIsCategorySingleActive: () =>
-    set({
-      isCategoryAllActive: false,
-      isCategorySingleActive: true,
-      isCategoryDoubleActive: false,
-      isCategoryMiniActive: false,
-      isCategoryYarnActive: false,
-    }),
-  isCategoryDoubleActive: false,
-  setIsCategoryDoubleActive: () =>
-    set({
-      isCategoryAllActive: false,
-      isCategorySingleActive: false,
-      isCategoryDoubleActive: true,
-      isCategoryMiniActive: false,
-      isCategoryYarnActive: false,
-    }),
-  isCategoryMiniActive: false,
-  setIsCategoryMiniActive: () =>
-    set({
-      isCategoryAllActive: false,
-      isCategorySingleActive: false,
-      isCategoryDoubleActive: false,
-      isCategoryMiniActive: true,
-      isCategoryYarnActive: false,
-    }),
-  isCategoryYarnActive: false,
-  setIsCategoryYarnActive: () =>
-    set({
-      isCategoryAllActive: false,
-      isCategorySingleActive: false,
-      isCategoryDoubleActive: false,
-      isCategoryMiniActive: false,
-      isCategoryYarnActive: true,
-    }),
+      activeCategory: category,
+    })
+
 });
 
 store = persist(store, { name: "Sumline_Shop_Cart_V2" });

@@ -4,48 +4,19 @@ import useStore from "@/store/store";
 
 function SearchBar() {
   const {
-    setCategoryTerm,
     setColorTerm,
     setSortTerm,
     sortTerm,
     colorTerm,
-    isCategoryAllActive,
-    setIsCategoryAllActive,
-    isCategorySingleActive,
-    setIsCategorySingleActive,
-    isCategoryDoubleActive,
-    setIsCategoryDoubleActive,
-    isCategoryMiniActive,
-    setIsCategoryMiniActive,
-    isCategoryYarnActive,
-    setIsCategoryYarnActive,
+    activeCategory,
+    setActiveCategory,
     theme
   } = useStore();
 
-  const handleToggleCategoryAll = () => {
-    setCategoryTerm("all");
-    setIsCategoryAllActive();
+  const handleToggleActivecategory = (value) => {
+    setActiveCategory(value)
   };
 
-  const handleToggleCategoryDouble = () => {
-    setCategoryTerm("Giant Yarn Bag (รุ่นสายคู่)");
-    setIsCategoryDoubleActive();
-  };
-
-  const handleToggleCategorySingle = () => {
-    setCategoryTerm("Giant Yarn Bag (รุ่นสายถัก)");
-    setIsCategorySingleActive();
-  };
-
-  const handleToggleCategoryMini = () => {
-    setCategoryTerm("Mini Giant Yarn Bag");
-    setIsCategoryMiniActive();
-  };
-
-  const handleToggleCategoryGiant = () => {
-    setCategoryTerm("Giant Yarn");
-    setIsCategoryYarnActive();
-  };
 
   const [isSortActive, setIsSortActive] = useState(false);
 
@@ -86,12 +57,12 @@ function SearchBar() {
               className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
                 ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
                 ${
-                isCategoryAllActive
+                  activeCategory == 'all'
                   ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
               }
               `}
-              onClick={() => handleToggleCategoryAll()}
+              onClick={() => handleToggleActivecategory('all')}
             >
               All Category
             </p>
@@ -99,12 +70,12 @@ function SearchBar() {
                className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
                 ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
                 ${
-                isCategoryDoubleActive
+                activeCategory == 'Giant Yarn Bag (รุ่นสายคู่)'
                   ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
               }
               `}
-              onClick={() => handleToggleCategoryDouble()}
+              onClick={() => handleToggleActivecategory('Giant Yarn Bag (รุ่นสายคู่)')}
             >
               Giant Yarn Bag (รุ่นสายคู่)
             </p>
@@ -112,12 +83,12 @@ function SearchBar() {
                className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
                 ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
                 ${
-                isCategorySingleActive
+                activeCategory == 'Giant Yarn Bag (รุ่นสายถัก)'
                   ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
               }
               `}
-              onClick={() => handleToggleCategorySingle()}
+              onClick={() => handleToggleActivecategory('Giant Yarn Bag (รุ่นสายถัก)')}
             >
               Giant Yarn Bag (รุ่นสายถัก)
             </p>
@@ -127,12 +98,12 @@ function SearchBar() {
                className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
                 ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
                 ${
-                isCategoryMiniActive
+                activeCategory == 'Mini Giant Yarn Bag'
                   ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
               }
               `}
-              onClick={() => handleToggleCategoryMini()}
+              onClick={() => handleToggleActivecategory('Mini Giant Yarn Bag')}
             >
               Mini Giant Yan Bag
             </p>
@@ -140,12 +111,12 @@ function SearchBar() {
                className={`text-[14px] mr-[40px] hover:border-b-2 cursor-pointer 
                 ${theme === "light" ? "text-[#c6c6c6] hover:text-black border-black" : "text-white border-white hover:text-white"}
                 ${
-                isCategoryYarnActive
+                activeCategory == 'Giant Yarn'
                   ? "text-black border-b-2 border-black"
                   : "text-[#c6c6c6]"
               }
               `}
-              onClick={() => handleToggleCategoryGiant()}
+              onClick={() => handleToggleActivecategory('Giant Yarn')}
             >
               Giant Yarn
             </p>
@@ -162,7 +133,7 @@ function SearchBar() {
               SORT BY {sortTerm}
             </p>
             {isSortActive && (
-              <div className="absolute top-[40px] lg:right-[0px] fixed shadow-2xl z-50 w-[250px] bg-white p-[10px]">
+              <div className="absolute top-[40px] lg:right-[0px] shadow-2xl z-50 w-[250px] bg-white p-[10px]">
                 <p
                   className="text-[14px] text-gray-600 py-[2px] cursor-pointer"
                   onClick={() => handleSortbyName()}
@@ -195,7 +166,7 @@ function SearchBar() {
 
 
             {isColorActive && (
-              <div className="absolute top-[40px] lg:right-[0px] fixed shadow-2xl z-50 w-[120px] bg-white p-[10px]">
+              <div className="absolute top-[40px] lg:right-[0px] shadow-2xl z-50 w-[120px] bg-white p-[10px]">
                 <div className="flex mb-[5px]">
                   <div
                     className="bg-rose-950 w-[12px] h-[12px] my-[auto] rounded-full mr-[10px]"
